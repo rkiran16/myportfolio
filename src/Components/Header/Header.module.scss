@@ -24,6 +24,37 @@
     li {
       color: $primary-color;
       padding-left: rem(15px);
+      display: flex;
+      align-items: center;
+      position: relative;
+      a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: inherit;
+        img {
+          width: rem(20px);
+          margin-right: rem(5px);
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 80%;
+          height: 2px;
+          bottom: rem(-12px);
+          left: rem(20px);
+          background-color: $primary-color;
+          visibility: hidden;
+          transform: scaleX(0);
+          transition: all 0.3s ease-in-out 0s;
+        }
+
+        &:hover::before {
+          visibility: visible;
+          transform: scaleX(1);
+        }
+      }
     }
   }
 }
