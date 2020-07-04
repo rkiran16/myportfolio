@@ -1,0 +1,29 @@
+@import "~sass-rem";
+@import "src/styles/_variables.scss";
+
+.header {
+  padding: rem(20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    display: flex;
+    img {
+       width: rem(60px);
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    li {
+      color: $primary-color;
+      padding-left: rem(15px);
+    }
+  }
+}
