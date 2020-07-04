@@ -1,7 +1,6 @@
 import React from 'react';
 import { header, logo } from './Header.module.scss';
 import Logo from './logo.png';
-import Button from "../Button";
 import Anchor from "../Anchor";
 
 const Header = () => {
