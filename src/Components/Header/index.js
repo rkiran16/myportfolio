@@ -2,6 +2,7 @@ import React from 'react';
 import { header, logo } from './Header.module.scss';
 import Logo from './logo.png';
 import Button from "../Button";
+import Anchor from "../Anchor";
 
 const Header = () => {
     return(
@@ -15,7 +16,7 @@ const Header = () => {
                 <li>Skills</li>
                 <li>Contact</li>
                 <li>
-                    <Button label="Resume" onPress={() => {}} />
+                    <Anchor href="./Resume.pdf" children={<span>Resume</span>}/>
                 </li>
             </ul>
         </div>

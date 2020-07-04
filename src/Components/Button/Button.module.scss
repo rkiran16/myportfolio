@@ -2,13 +2,14 @@
 @import "src/styles/_variables.scss";
 
 .btn {
-  width: 100%;
   font: rem(18px $font-stack) ;
   padding: rem(10px);
   background: transparent;
   color: $primary-color;
   border-radius: rem(5px);
   border: rem(2px solid $primary-color);
+  text-decoration: none;
+  display: flex;
 
   &:hover {
     background-color: rgba(100, 255, 218, 0.07);
