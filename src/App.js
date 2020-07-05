@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.scss';
 import UncontrolledLottie from "./Components/Lottie";
 import Header from "./Components/Header";
+import About from "./About";
+import Contact from "./Contact";
 
 export default class App extends React.Component {
     render() {
         return (
-            <div>
+            <Fragment>
                 <UncontrolledLottie/>
                 <Header/>
-            </div>
+                <div className="app">
+                    <About/>
+                </div>
+                <Contact/>
+            </Fragment>
         );
     }
 }
