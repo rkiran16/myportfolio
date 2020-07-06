@@ -9,6 +9,7 @@
   height: 100%;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 
   @media screen and (max-width: $mobile-width) {
     height: 75%;
