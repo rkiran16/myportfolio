@@ -13,7 +13,7 @@ export default class About extends React.Component {
                     <Anchor href="#contact" children={<span>Contact Me</span>} />
                 </div>
                  <div className={profileDiv}>
-                     <a href="">
+                     <a href="https://www.linkedin.com/in/ravikancula/">
                          <img src={ProfilePic} alt="Ravi Kanculakunta"/>
                      </a>
                  </div>
