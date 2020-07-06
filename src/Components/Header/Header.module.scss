@@ -1,58 +1,111 @@
 @import "~sass-rem";
 @import "src/styles/_variables.scss";
 
+.show {
+  display: flex;
+}
+
 .header {
   padding: rem(20px);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   .logo {
     display: flex;
+
     img {
-       width: rem(60px);
+      width: rem(60px);
     }
   }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    li {
-      color: $primary-color;
-      padding-left: rem(15px);
+  .menu {
+    @media screen and (max-width: $mobile-width){
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .hamburgerIcon {
+      display: none;
+      @media screen and (max-width: $mobile-width) {
+        display: flex;
+        color: $primary-color;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+        border: none;
+        width: fit-content;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
       display: flex;
       align-items: center;
-      position: relative;
-      a{
-        text-decoration: none;
+      @media screen and (max-width: $mobile-width) {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        left:0;
+        right: 0;
+        margin-top: rem(15px);
+      }
+
+      li {
+        color: $primary-color;
+        padding-left: rem(15px);
         display: flex;
         align-items: center;
-        color: inherit;
-        img {
-          width: rem(20px);
-          margin-right: rem(5px);
+        position: relative;
+
+        @media screen and (max-width: $mobile-width) {
+            width: 100%;
+            padding: rem(15px 0px);
+            border-top: 1px solid;
+            display: flex;
+            justify-content: center;
+
+            &:last-child {
+               border-bottom: 1px solid;
+            }
         }
 
-        &::before {
-          content: "";
-          position: absolute;
-          width: 80%;
-          height: 2px;
-          bottom: rem(-12px);
-          left: rem(20px);
-          background-color: $primary-color;
-          visibility: hidden;
-          transform: scaleX(0);
-          transition: all 0.3s ease-in-out 0s;
-        }
+        a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          color: inherit;
 
-        &:hover::before {
-          visibility: visible;
-          transform: scaleX(1);
+          svg {
+            margin-right: rem(10px);
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 80%;
+            height: 2px;
+            bottom: rem(-12px);
+            left: rem(20px);
+            background-color: $primary-color;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out 0s;
+          }
+
+          &:hover::before {
+            visibility: visible;
+            transform: scaleX(1);
+          }
         }
       }
     }

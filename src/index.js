@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import UncontrolledLottie from "./Components/Lottie";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Fragment>
+        <App />
+        <UncontrolledLottie/>
+    </Fragment>
   </React.StrictMode>,
   document.getElementById('root')
 );

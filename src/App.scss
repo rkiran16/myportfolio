@@ -11,8 +11,24 @@ html, body {
    min-width: 100vw;
    display: flex;
    flex-direction: column;
-
+   overflow:auto;
    .app {
       flex: 1;
+   }
+}
+
+.iconColor {
+   color: $primary-color;
+}
+
+.show {
+   display: flex;
+}
+
+.hide {
+   // need to refactor for better solution
+   // this works only for header hide and show
+   @media screen and (max-width: $mobile-width) {
+      display: none;
    }
 }

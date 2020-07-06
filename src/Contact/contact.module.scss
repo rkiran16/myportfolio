@@ -10,6 +10,10 @@
   flex-direction: column;
   position: relative;
 
+  @media screen and (max-width: $mobile-width) {
+    height: 75%;
+  }
+
   svg {
     position: absolute;
     top: 0;
@@ -94,7 +98,7 @@
      align-items: center;
      margin: 0 auto;
      width: 100%;
-     height: rem(50px);
+     height: rem(40px);
      padding: rem(10px);
      position: absolute;
      bottom: 0;

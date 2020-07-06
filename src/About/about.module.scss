@@ -5,18 +5,34 @@
   display: flex;
   justify-content: space-around;
   color: $primary-color;
+  padding: rem(20px);
+
+  @media only screen and (max-width: $mobile-width)  {
+     flex-direction: column-reverse;
+     justify-content: center;
+     align-items: center;
+  }
 
   .profileDiv {
     display: flex;
     position: relative;
     a {
       img {
-        width: 300px;
-        height: 300px;
+        width: rem(300px);
+        height: rem(300px);
         object-fit: cover;
         display: block;
         filter: brightness(70%);
         transition: all 1s ease;
+
+        @media only screen and (max-width: $tablet-width) and (min-width: $mobile-width) {
+          width: rem(200px);
+          height: rem(200px);
+        }
+
+        @media screen and (max-width: $mobile-width) {
+            border-radius: 50%;
+        }
       }
 
       &:hover {
@@ -28,6 +44,10 @@
   }
 
   .aboutMe {
+    @media screen and (max-width: $mobile-width) {
+      display: flex;
+      flex-direction: column;
+    }
     h1 {
       font-size: rem(60px);
       margin-top: rem(5px);
@@ -35,6 +55,14 @@
       text-shadow: -2px -2px 0px $primary-color,
       3px 3px 0px $secondary-color,
       3px 3px 0px $bg-color;
+
+      @media only screen and (max-width: $tablet-width) and (min-width: $mobile-width) {
+        font-size: rem(40px);
+      }
+
+      @media screen and (max-width: $mobile-width) {
+        font-size: rem(30px);
+      }
     }
 
     h3 {
