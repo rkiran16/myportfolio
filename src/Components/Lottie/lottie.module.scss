@@ -5,11 +5,11 @@
   background-color: $bg-color;
   display: flex;
   justify-content: center;
-  width:      100%;
-  height:     100%;
-  z-index:    10;
-  top:        0;
-  left:       0;
-  position:   fixed;
+  width: 100%;
+  height: 100%;
+  z-index: $lottie-zIndex;
+  top: 0;
+  left: 0;
+  position: fixed;
   align-items: center;
 }

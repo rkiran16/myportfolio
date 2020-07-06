@@ -58,6 +58,8 @@
         left:0;
         right: 0;
         margin-top: rem(15px);
+        z-index: $menu-mobile-zIndex;
+        background-color: $bg-color;
       }
 
       li {
