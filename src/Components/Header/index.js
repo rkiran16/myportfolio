@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import Scrollspy from 'react-scrollspy'
 import {header, logo, menu, hamburgerIcon } from './Header.module.scss';
-import Anchor from "../Anchor";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBars, faBuilding, faEnvelope, faVial, faTimes} from '@fortawesome/free-solid-svg-icons'
 // images
