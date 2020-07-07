@@ -3,9 +3,14 @@ $font-stack: Lato,Helvetica, sans-serif;
 $mobile-width: 730px;
 $tablet-width: 920px;
 // colors
+$white: #ffffff;
 $bg-color: #001a34;
+$bg-color-secondary: #00274e;
 $primary-color: #cccc00;
 $secondary-color: #999900;
 // z-index
-$lottie-zIndex: 1;
+$lottie-zIndex: 3;
 $menu-mobile-zIndex: 2;
+$heading-zIndex: 1;
+// Width
+$max-width : 1024px;

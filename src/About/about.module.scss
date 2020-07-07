@@ -2,73 +2,57 @@
 @import "~sass-rem";
 
 .about {
-  display: flex;
-  justify-content: space-around;
   color: $primary-color;
   padding: rem(20px);
+  background: $bg-color-secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-  @media only screen and (max-width: $mobile-width)  {
-     flex-direction: column-reverse;
-     justify-content: center;
-     align-items: center;
-  }
-
-  .profileDiv {
+  .wrapper {
+    max-width: rem($max-width);
     display: flex;
-    position: relative;
-    a {
-      img {
-        width: rem(300px);
-        height: rem(300px);
-        object-fit: cover;
-        display: block;
-        filter: brightness(70%);
-        transition: all 1s ease;
+    justify-content: space-around;
+    margin: rem(50px) auto;
 
-        @media only screen and (max-width: $tablet-width) and (min-width: $mobile-width) {
-          width: rem(200px);
-          height: rem(200px);
-        }
-
-        @media screen and (max-width: $mobile-width) {
-            border-radius: 50%;
-        }
-      }
-
-      &:hover {
-         img {
-           filter: brightness(100%);
-         }
-      }
+    @media only screen and (max-width: $mobile-width)  {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
     }
-  }
 
-  .aboutMe {
-    @media screen and (max-width: $mobile-width) {
+    .profileDiv {
       display: flex;
       flex-direction: column;
-    }
-    h1 {
-      font-size: rem(60px);
-      margin-top: rem(5px);
-      letter-spacing: 7px;
-      text-shadow: -2px -2px 0px $primary-color,
-      3px 3px 0px $secondary-color,
-      3px 3px 0px $bg-color;
-
-      @media only screen and (max-width: $tablet-width) and (min-width: $mobile-width) {
-        font-size: rem(40px);
+      align-items: center;
+      a {
+        margin-bottom: rem(10px);
+        img {
+          width: rem(250px);
+          height: rem(250px);
+          object-fit: cover;
+          display: block;
+          border-radius: 50%;
+        }
       }
 
-      @media screen and (max-width: $mobile-width) {
-        font-size: rem(30px);
+      div {
+        p {
+          text-align: center;
+          color: $white;
+          font-size: rem(18px);
+          font: $font-stack;
+          span, a {
+             color: $primary-color;
+          }
+        }
       }
     }
 
-    h3 {
-      font-size: rem(20px);
-      color: $secondary-color;
-      margin-bottom: rem(5px);
-    }
+  }
+
+  .skills {
+    width: 100%;
   }
 }

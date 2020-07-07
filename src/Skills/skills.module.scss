@@ -1,0 +1,9 @@
+@import "~sass-rem";
+@import "src/styles/_variables.scss";
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  padding: rem(20px);
+  align-items: center;
+}

@@ -3,7 +3,7 @@ import Scrollspy from 'react-scrollspy'
 import {header, logo, menu, hamburgerIcon } from './Header.module.scss';
 import Anchor from "../Anchor";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faBars, faBuilding, faEnvelope, faTools, faVial, faTimes} from '@fortawesome/free-solid-svg-icons'
+import {faBars, faBuilding, faEnvelope, faVial, faTimes} from '@fortawesome/free-solid-svg-icons'
 // images
 import Logo from './logo.png';
 
@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <div className={header}>
             <div className={logo}>
-                <a href="/"><img src={Logo} alt="Portfolio Logo"/></a>
+                <a href="#intro"><img src={Logo} alt="Portfolio Logo"/></a>
             </div>
             <div className={menu}>
                 <button className={hamburgerIcon} onClick={toggleMenuIconVisibility}>
@@ -22,7 +22,7 @@ const Header = () => {
                     <FontAwesomeIcon icon={faTimes} size="3x" className={isMenuVisible ? 'show' : 'hide'}/>
                 </button>
                 <div className={isMenuVisible ? 'show' : 'hide'}>
-                    <Scrollspy items={['experience', 'work', 'skills', 'contact']} currentClassName="is-current">
+                    <Scrollspy items={['experience', 'work', 'contact']} currentClassName="is-current">
                         <li>
                             <a href="#experience">
                                 <FontAwesomeIcon icon={faBuilding} size="2x" className="iconColor"/>
@@ -36,18 +36,11 @@ const Header = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#skills">
-                                <FontAwesomeIcon icon={faTools} size="2x" className="iconColor"/>
-                                Skills
-                            </a>
-                        </li>
-                        <li>
                             <a href="#contact">
                                 <FontAwesomeIcon icon={faEnvelope} size="2x" className="iconColor"/>
                                 Contact
                             </a>
                         </li>
-                        <li><Anchor href="./Resume.pdf" children={<span>Resume</span>}/></li>
                     </Scrollspy>
                 </div>
             </div>

@@ -1,22 +1,31 @@
 import React from 'react';
-import { about, aboutMe, profileDiv } from './about.module.scss';
-import Anchor from "../Components/Anchor";
+import { about, wrapper, skills, profileDiv } from './about.module.scss';
 import ProfilePic from './profile.jpg';
+import Heading from "../Components/Heading";
 
 export default class About extends React.Component {
      render() {
          return(
              <div className={about}>
-                <div className={aboutMe}>
-                    <h3>Front End Engineer</h3>
-                    <h1>RAVI <br/>KANCULAKUNTA</h1>
-                    <Anchor href="#contact" children={<span>Contact Me</span>} />
+                <Heading headingText="ABOUT" />
+                <div className={wrapper}>
+                    <div className={skills}>
+
+                    </div>
+                    <div className={profileDiv}>
+                        <a href="https://www.linkedin.com/in/ravikancula/">
+                            <img src={ProfilePic} alt="Ravi Kanculakunta"/>
+                        </a>
+                        <div>
+                            <p>Hello I'm <span>Ravi</span> , a Front End Engineer for
+                                <a href="https://www.ibm.com/services/ibmix/studios/cambridge/" target="_blank" rel="noopener noreferrer">IBM IX</a> in Boston, MA.</p>
+                            <p>
+                                I enjoy creating <span>smart</span> user interface and imagine useful interaction, developing rich web experiences & web applications.
+                                I am interested in building applications from ground up that are pixel-perfect, intuitive, dynamic experiences .
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                 <div className={profileDiv}>
-                     <a href="https://www.linkedin.com/in/ravikancula/">
-                         <img src={ProfilePic} alt="Ravi Kanculakunta"/>
-                     </a>
-                 </div>
              </div>
          )
      }
