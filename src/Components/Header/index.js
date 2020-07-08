@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import cx from 'classnames';
 import Scrollspy from 'react-scrollspy'
-import {header, logo, menu, hamburgerIcon, active } from './Header.module.scss';
+import {header, logo, menu, hamburgerIcon } from './Header.module.scss';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBars, faBuilding, faEnvelope, faVial, faTimes} from '@fortawesome/free-solid-svg-icons'
 // images
