@@ -18,6 +18,10 @@
       border-top: 1px solid white;
       top: rem(6px);
       width: rem(300px);
+
+      @media screen and (max-width: $mobile-width) {
+        width: rem(100px);
+      }
     }
 
     &:before {

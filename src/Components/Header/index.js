@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+import cx from 'classnames';
 import Scrollspy from 'react-scrollspy'
-import {header, logo, menu, hamburgerIcon } from './Header.module.scss';
+import {header, logo, menu, hamburgerIcon, active } from './Header.module.scss';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBars, faBuilding, faEnvelope, faVial, faTimes} from '@fortawesome/free-solid-svg-icons'
 // images
@@ -8,10 +9,25 @@ import Logo from './logo.png';
 
 const Header = () => {
     const [isMenuVisible, setVisibility] = useState(false);
+    const [headerClassName, setHeaderClassName] = useState("");
     const toggleMenuIconVisibility = () => setVisibility(!isMenuVisible);
 
+    const listenScrollEvent = (event) => {
+        if (window.scrollY < 73) {
+            return setHeaderClassName("")
+        } else if (window.scrollY > 70) {
+            return setHeaderClassName("active")
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent);
+        return () =>
+            window.removeEventListener('scroll', listenScrollEvent);
+    }, []);
+
     return (
-        <div className={header}>
+        <div className={cx(header, headerClassName)}>
             <div className={logo}>
                 <a href="#intro"><img src={Logo} alt="Portfolio Logo"/></a>
             </div>
