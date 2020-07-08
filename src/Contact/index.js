@@ -34,10 +34,10 @@ export default class Contact extends Component {
                     >
                         {({ isSubmitting }) => (
                             <Form>
-                                <Field type="text" name="username" placeHolder="Name" />
-                                <Field type="email" name="email" placeHolder="Email" />
+                                <Field type="text" name="username" placeholder="Name" />
+                                <Field type="email" name="email" placeholder="Email" />
                                 <Field type="text" component="textarea"
-                                       rows="10" name="message" placeHolder="Your Message" />
+                                       rows="10" name="message" placeholder="Your Message" />
                                 <button type="submit" disabled={isSubmitting}>
                                     Submit
                                 </button>

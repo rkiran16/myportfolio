@@ -4,30 +4,41 @@
 .about {
   color: $primary-color;
   padding: rem(20px);
-  background: $bg-color-secondary;
   display: flex;
+  background-color: $bg-color-secondary;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 
   .wrapper {
     max-width: rem($max-width);
     display: flex;
-    justify-content: space-around;
+    width: 100%;
     margin: rem(50px) auto;
 
-    @media only screen and (max-width: $mobile-width)  {
+    @media only screen and (max-width: $tablet-width) {
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
+      width: 100%;
     }
 
     .profileDiv {
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 100%;
+      margin-left: rem(10px);
+
+      @media screen and (max-width: $tablet-width) {
+        margin-left: 0;
+        margin-bottom: rem(15px);
+      }
+
       a {
         margin-bottom: rem(10px);
+
         img {
           width: rem(250px);
           height: rem(250px);
@@ -43,8 +54,10 @@
           color: $white;
           font-size: rem(18px);
           font: $font-stack;
+
           span, a {
-             color: $primary-color;
+            color: $primary-color;
+            margin: auto rem(5px);
           }
         }
       }
@@ -54,5 +67,18 @@
 
   .skills {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: rem(10px);
+    justify-content: space-around;
+
+    @media screen and (max-width: $tablet-width) {
+      margin-right: 0;
+
+      > div {
+        margin-bottom: rem(10px);
+      }
+
+    }
   }
 }

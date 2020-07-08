@@ -1,0 +1,20 @@
+@import "src/styles/_variables.scss";
+@import "~sass-rem";
+
+.experienceWrapper {
+  color: $primary-color;
+  padding: rem(20px);
+  display: flex;
+  background-color: $bg-color;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  .timeLine {
+    max-width: rem($max-width);
+    display: flex;
+    width: 100%;
+    margin: rem(50px) auto;
+  }
+}
