@@ -4,16 +4,18 @@ import Contact from "./Contact";
 import Intro from "./Intro";
 import About from "./About";
 import Experience from "./Experience";
+import Work from "./Work";
 
 export default class App extends React.Component {
     render() {
         return (
-            <Fragment>
+            <main className="app">
                 <Intro/>
                 <About/>
                 <Experience/>
+                <Work/>
                 <Contact/>
-            </Fragment>
+            </main>
         );
     }
 }

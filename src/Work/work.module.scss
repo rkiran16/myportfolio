@@ -1,9 +1,14 @@
 @import "~sass-rem";
 @import "src/styles/_variables.scss";
 
-.skills {
+.work {
   display: flex;
   justify-content: space-around;
   padding: rem(20px);
   align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: $bg-color-secondary;
+  color: $primary-color;
 }

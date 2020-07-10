@@ -8,7 +8,7 @@ import {scroller as scroll} from "react-scroll";
 
 const Intro = () => {
     return (
-        <div id="intro" className={introContainer}>
+        <section title="Intro" id="intro" className={introContainer}>
             <Header/>
             <Fragment>
                 <h1>RAVI KANCULAKUNTA</h1>
@@ -29,7 +29,7 @@ const Intro = () => {
                     <FontAwesomeIcon icon={faMouse} size="3x" className="iconColor"/>
                 </div>
             </Fragment>
-        </div>
+        </section>
     )
 }
 

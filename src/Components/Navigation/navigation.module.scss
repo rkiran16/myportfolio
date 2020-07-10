@@ -1,0 +1,30 @@
+@import "src/styles/_variables.scss";
+@import "~sass-rem";
+
+.navigation {
+  color: $white;
+  position: fixed;
+  top:50%;
+  bottom: 50%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  z-index: $nav-zIndex;
+  height: auto;
+
+  a{
+    display: flex;
+    align-items: center;
+    line-height: 2;
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin-bottom: rem(20px);
+
+    span {
+       display: flex;
+       margin-left: rem(30px);
+    }
+  }
+}

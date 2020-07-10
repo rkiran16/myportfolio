@@ -3,15 +3,16 @@ import { Formik, Form, Field } from 'formik';
 import { contact, contactForm, copyRight } from './contact.module.scss';
 import Linkedin from './linkedin.png';
 import Github from './github.png';
+import emailjs from 'emailjs-com';
 
 export default class Contact extends Component {
+    componentDidMount() {
+        emailjs.init("user_kIxox3qpQwa7YKbCVxuFa");
+    }
+
     render() {
         return(
             <section title="contact" id="contact" className={contact}>
-                {/*<svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"*/}
-                {/*     xmlns="http://www.w3.org/2000/svg" className="svgcolor-light">*/}
-                {/*    <path d="M0 0 L50 100 L100 0 Z" fill="#001a34" stroke="#001a34"/>*/}
-                {/*</svg>*/}
                 <div className={contactForm}>
                     <h1>Say Hello. Let's work together</h1>
                     <ul>
@@ -22,14 +23,25 @@ export default class Contact extends Component {
                             <a href="https://github.com/rkiran16" target="_blank" rel="noopener noreferrer"><img src={Github} alt="Ravi's Github"/></a>
                         </li>
                     </ul>
-                    <p>Find me on social media, use the form below, or hit me up via email at ravikancula@gmail.com.</p>
+                    <p>Find me on social media or use the form below to contact me.</p>
                     <Formik
                         initialValues={{ username: '', email: '', message: '' }}
-                        onSubmit={(values, { setSubmitting }) => {
-                            setTimeout(() => {
-                                alert(JSON.stringify(values, null, 2));
-                                setSubmitting(false);
-                            }, 400);
+                        onSubmit={(values, { setSubmitting, resetForm }) => {
+                            const email = {
+                                message_html: values.message,
+                                from_name: values.username,
+                                reply_to: values.email,
+                                to_name: "Ravi Kanculakunta"
+                            }
+                            emailjs.send('gmail', 'template_2nTVArDl', email)
+                                .then(function(response) {
+                                    console.log('SUCCESS!', response.status, response.text);
+                                    resetForm({ username: '', email: '', message: '' });
+                                    setSubmitting(false);
+                                }, function(error) {
+                                    console.log('FAILED...', error);
+                                    setSubmitting(false);
+                                });
                         }}
                     >
                         {({ isSubmitting }) => (

@@ -12,19 +12,19 @@ const Header = () => {
     const [headerClassName, setHeaderClassName] = useState("");
     const toggleMenuIconVisibility = () => setVisibility(!isMenuVisible);
 
-    const listenScrollEvent = (event) => {
-        if (window.scrollY < 73) {
-            return setHeaderClassName("")
-        } else if (window.scrollY > 70) {
-            return setHeaderClassName("active")
-        }
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', listenScrollEvent);
-        return () =>
-            window.removeEventListener('scroll', listenScrollEvent);
-    }, []);
+    // const listenScrollEvent = (event) => {
+    //     if (window.scrollY < 73) {
+    //         return setHeaderClassName("")
+    //     } else if (window.scrollY > 70) {
+    //         return setHeaderClassName("active")
+    //     }
+    // }
+    //
+    // useEffect(() => {
+    //     window.addEventListener('scroll', listenScrollEvent);
+    //     return () =>
+    //         window.removeEventListener('scroll', listenScrollEvent);
+    // }, []);
 
     const scrollToTop = () => {
         scroll.scrollToTop();
@@ -48,7 +48,7 @@ const Header = () => {
                                 to="about"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={0}
                                 duration={500}
                             >
                                 <FontAwesomeIcon icon={faUserCircle} size="2x" className="iconColor"/>
@@ -61,7 +61,7 @@ const Header = () => {
                                 to="experience"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={0}
                                 duration={500}
                             >
                                 <FontAwesomeIcon icon={faBuilding} size="2x" className="iconColor"/>
@@ -74,7 +74,7 @@ const Header = () => {
                                 to="work"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={0}
                                 duration={500}
                             >
                                 <FontAwesomeIcon icon={faVial} size="2x" className="iconColor"/>
@@ -87,7 +87,7 @@ const Header = () => {
                                 to="contact"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={0}
                                 duration={500}
                             >
                                 <FontAwesomeIcon icon={faEnvelope} size="2x" className="iconColor"/>
