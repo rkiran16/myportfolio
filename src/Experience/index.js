@@ -9,7 +9,7 @@ import {faBuilding} from '@fortawesome/free-solid-svg-icons'
 export default class Experience extends React.Component {
     render() {
         return(
-            <div className={experienceWrapper}>
+            <section title="experience" id="experience" className={experienceWrapper}>
                 <Heading headingText="Experience" />
                 <div className={timeLine}>
                     <VerticalTimeline>
@@ -68,7 +68,7 @@ export default class Experience extends React.Component {
                         </VerticalTimelineElement>
                     </VerticalTimeline>
                 </div>
-            </div>
+            </section>
         )
     }
 }

@@ -7,7 +7,7 @@ import ProgressBar from "../Components/ProgressBar";
 export default class About extends React.Component {
     render() {
         return (
-            <div className={about}>
+            <section title="about" id="about" className={about}>
                 <Heading headingText="ABOUT"/>
                 <div className={wrapper}>
                     <div className={skills}>
@@ -35,7 +35,7 @@ export default class About extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 };

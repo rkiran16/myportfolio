@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import cx from 'classnames';
-import Scrollspy from 'react-scrollspy'
-import {header, logo, menu, hamburgerIcon } from './Header.module.scss';
+import {header, logo, menu, hamburgerIcon} from './Header.module.scss';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faBars, faBuilding, faEnvelope, faVial, faTimes} from '@fortawesome/free-solid-svg-icons'
+import {faBars, faBuilding, faEnvelope, faVial, faTimes, faUserCircle} from '@fortawesome/free-solid-svg-icons'
+import {Link, animateScroll as scroll} from "react-scroll";
 // images
 import Logo from './logo.png';
 
@@ -26,10 +26,14 @@ const Header = () => {
             window.removeEventListener('scroll', listenScrollEvent);
     }, []);
 
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
     return (
         <div className={cx(header, headerClassName)}>
             <div className={logo}>
-                <a href="#intro"><img src={Logo} alt="Portfolio Logo"/></a>
+                <img src={Logo} alt="Portfolio Logo" onClick={scrollToTop}/>
             </div>
             <div className={menu}>
                 <button className={hamburgerIcon} onClick={toggleMenuIconVisibility}>
@@ -37,26 +41,60 @@ const Header = () => {
                     <FontAwesomeIcon icon={faTimes} size="3x" className={isMenuVisible ? 'show' : 'hide'}/>
                 </button>
                 <div className={isMenuVisible ? 'show' : 'hide'}>
-                    <Scrollspy items={['experience', 'work', 'contact']} currentClassName="is-current">
+                    <ul>
                         <li>
-                            <a href="#experience">
+                            <Link
+                                activeClass="active"
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                <FontAwesomeIcon icon={faUserCircle} size="2x" className="iconColor"/>
+                                About Me
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                activeClass="active"
+                                to="experience"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
                                 <FontAwesomeIcon icon={faBuilding} size="2x" className="iconColor"/>
                                 Experience
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#work">
+                            <Link
+                                activeClass="active"
+                                to="work"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
                                 <FontAwesomeIcon icon={faVial} size="2x" className="iconColor"/>
                                 Work
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#contact">
+                            <Link
+                                activeClass="active"
+                                to="contact"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
                                 <FontAwesomeIcon icon={faEnvelope} size="2x" className="iconColor"/>
                                 Contact
-                            </a>
+                            </Link>
                         </li>
-                    </Scrollspy>
+                    </ul>
                 </div>
             </div>
         </div>

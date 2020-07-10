@@ -54,34 +54,22 @@
 
     a {
       width: 100%;
+
       svg {
-         margin-right: rem(15px);
+        margin-right: rem(15px);
       }
+
       span {
-         font-size: rem(18px);
+        font-size: rem(18px);
       }
     }
   }
 
-  .arrowDown {
+  .scrollMe {
     position: absolute;
-    width: rem(75px);
-    height: rem(75px);
-    background: transparent;
-    transform: rotate(45deg);
-    border: 5px solid transparent;
-    border-bottom-color: $secondary-color;
-    border-right-color: $secondary-color;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
     cursor: pointer;
-    animation: move 1000ms linear infinite alternate
-  }
-
-  @keyframes move {
-    0% {
-      bottom: 75px;
-    }
-    100% {
-      bottom: 125px
-    }
   }
 }
