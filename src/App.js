@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './App.scss';
 import Contact from "./Contact";
 import Intro from "./Intro";
