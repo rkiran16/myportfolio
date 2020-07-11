@@ -24,7 +24,7 @@ export default class Experience extends React.Component {
                             <h3 className="vertical-timeline-element-title">Sr Application Developer @ IBM IX</h3>
                             <h4 className="vertical-timeline-element-subtitle">Boston, MA</h4>
                             <p>
-                                Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                               React, React Native,Node.js,Redux, Vanilla JS , AEM , Sketch, Invision.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
@@ -37,7 +37,7 @@ export default class Experience extends React.Component {
                             <h3 className="vertical-timeline-element-title">Front End Developer @ Resource Ammirati</h3>
                             <h4 className="vertical-timeline-element-subtitle">Columbus, OH</h4>
                             <p>
-                                Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+                                React, HTML, SCSS, Vanilla JS, Atomic design Methodology, Sketch, Adobe PhotoShop.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
@@ -50,7 +50,7 @@ export default class Experience extends React.Component {
                             <h3 className="vertical-timeline-element-title">Web Developer @ ICC</h3>
                             <h4 className="vertical-timeline-element-subtitle">Columbus, OH</h4>
                             <p>
-                                User Experience, Visual Design
+                                Flex, As3, Robotlegs, HTML, SCSS, Vanilla JS.
                             </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
@@ -63,7 +63,7 @@ export default class Experience extends React.Component {
                             <h3 className="vertical-timeline-element-title">Web Developer @ Smart Solutions</h3>
                             <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
                             <p>
-                                User Experience, Visual Design
+                                Flex, As3, Cairnogram.
                             </p>
                         </VerticalTimelineElement>
                     </VerticalTimeline>
