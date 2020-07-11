@@ -9,9 +9,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
+  min-height: 100vh;
+  min-width: 100vw;
 
   .timeLine {
     max-width: rem($max-width);

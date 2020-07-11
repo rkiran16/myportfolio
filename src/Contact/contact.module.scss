@@ -8,8 +8,8 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
 
   svg {
     position: absolute;

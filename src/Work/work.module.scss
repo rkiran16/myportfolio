@@ -6,9 +6,9 @@
   justify-content: space-around;
   padding: rem(20px);
   align-items: center;
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
+  min-height: 100vh;
+  min-width: 100vw;
   background-color: $bg-color-secondary;
   color: $primary-color;
 }

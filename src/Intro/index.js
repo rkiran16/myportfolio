@@ -1,10 +1,9 @@
 import React, {Fragment} from 'react';
-import {introContainer, resume, scrollMe} from './intro.module.scss'
+import {introContainer, resume, scrollMe, divider, mousey, scroller } from './intro.module.scss'
 import Anchor from "../Components/Anchor";
 import Header from "../Components/Header";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faBinoculars, faMouse} from '@fortawesome/free-solid-svg-icons'
-import {scroller as scroll} from "react-scroll";
+import { faBinoculars } from '@fortawesome/free-solid-svg-icons'
 
 const Intro = () => {
     return (
@@ -12,7 +11,7 @@ const Intro = () => {
             <Header/>
             <Fragment>
                 <h1>RAVI KANCULAKUNTA</h1>
-                <hr/>
+                <hr className={divider}/>
                 <h3>I'm a Front End Engineer based out of Boston, MA</h3>
                 <div className={resume}>
                     <Anchor href="./Resume.pdf" children={<Fragment>
@@ -21,12 +20,10 @@ const Intro = () => {
                     </Fragment>
                     }/>
                 </div>
-                <div className={scrollMe} onClick={() => scroll.scrollTo('about', {
-                    duration: 1500,
-                    delay: 50,
-                    smooth: 'easeInOutQuint',
-                })}>
-                    <FontAwesomeIcon icon={faMouse} size="3x" className="iconColor"/>
+                <div className={scrollMe}>
+                    <div className={mousey}>
+                        <div className={scroller} />
+                    </div>
                 </div>
             </Fragment>
         </section>
