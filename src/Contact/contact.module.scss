@@ -11,11 +11,6 @@
   min-height: 100vh;
   min-width: 100vw;
 
-  svg {
-    position: absolute;
-    top: 0;
-  }
-
   .contactForm {
     padding: rem(20px);
     display: flex;
@@ -34,6 +29,10 @@
         flex: 0 1 auto; /* Default */
         list-style-type: none;
         margin-right: rem(10px);
+
+        svg {
+          color: orangered;
+        }
       }
     }
 

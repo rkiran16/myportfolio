@@ -12,7 +12,7 @@ class UncontrolledLottie extends Component {
     }
 
     componentDidMount() {
-        this.timerHandle = setTimeout(() => this.setState({ loading: false }), 3500);
+        this.timerHandle = setTimeout(() => this.setState({ loading: false }), 2500);
     }
 
     componentWillUnmount(){

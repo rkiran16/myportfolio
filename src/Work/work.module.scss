@@ -1,5 +1,5 @@
 @import "~sass-rem";
-@import "src/styles/_variables.scss";
+@import "src/styles/variables";
 
 .work {
   display: flex;
@@ -13,62 +13,129 @@
   color: $primary-color;
 
   .wrapper {
-    max-width: rem($max-width);
-    margin: 0 auto;
-  }
-
-  ul {
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      height: 40vh;
-      flex-grow: 1;
-    }
-    img {
-      max-height: 100%;
-      min-width: 100%;
-      object-fit: cover;
-      vertical-align: bottom;
-    }
-  }
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: rem(960px);
+    margin: 0 auto;
+    align-items: center;
+    padding: rem(15px);
 
-
-  // ADVANCED
-
-  // Portrait
-
-  @media (max-aspect-ratio: 1/1) {
-    li {
-      height: 30vh;
-    }
-  }
-
-  // Short screens
-
-  @media (max-height: 480px) {
-    li {
-      height: 80vh;
-    }
-  }
-
-  // Smaller screens in portrait
-
-  @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
-    ul {
-      flex-direction: row;
+    @media screen and (max-width: $tablet-width) {
+      flex-direction: column;
+      padding: 0;
     }
 
-    li {
+    figure {
+      position: relative;
+      float: left;
+      overflow: hidden;
+      margin: 0;
+      min-width: 320px;
+      max-width: rem(600px);
       height: auto;
-      width: 100%;
+      background: $secondary-color;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+      img {
+        position: relative;
+        display: block;
+        min-height: 100%;
+        max-width: 100%;
+        opacity: 0.8;
+        transition: transform 0.35s;
+        backface-visibility: hidden;
+      }
+
+      figcaption {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        p {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          opacity: 0;
+          transition: opacity 0.35s, transform 0.35s;
+          transform: translate3d(0, 50px, 0);
+
+          a {
+            margin-right: rem(15px);
+
+            svg {
+              color: $bg-color;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        img {
+          transform: translate3d(0, -80px, 0);
+        }
+
+        p {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
     }
-    img {
-      width: 100%;
-      max-height: 75vh;
-      min-width: 0;
+  }
+
+  .projectDesc {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    right: rem(30px);
+    text-align: right;
+
+    @media screen and (max-width: $tablet-width) {
+      right: initial;
+      text-align: initial;
+    }
+
+    h2 {
+      margin-bottom: rem(5px);
+      margin-top: rem(5px);
+    }
+
+    h4 {
+      margin-bottom: rem(5px);
+    }
+
+    p {
+      background-color: $bg-color;
+      padding: rem(15px);
+      text-align: initial;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    }
+  }
+
+  .wrapperReverse {
+    flex-direction: row-reverse;
+
+    @media screen and (max-width: $tablet-width) {
+      flex-direction: column;
+    }
+
+    .projectDesc {
+      text-align: left;
+      left: rem(30px);
+
+      @media screen and (max-width: $tablet-width) {
+        left: initial;
+        text-align: initial;
+      }
     }
   }
 }
