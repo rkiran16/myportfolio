@@ -12,19 +12,15 @@
   background-color: $bg-color-secondary;
   color: $primary-color;
 
+  .grid {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+  }
+
   .wrapper {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    max-width: rem(960px);
-    margin: 0 auto;
-    align-items: center;
     padding: rem(15px);
-
-    @media screen and (max-width: $tablet-width) {
-      flex-direction: column;
-      padding: 0;
-    }
 
     figure {
       position: relative;
@@ -32,7 +28,7 @@
       overflow: hidden;
       margin: 0;
       min-width: 320px;
-      max-width: rem(600px);
+      max-width: rem(450px);
       height: auto;
       background: $secondary-color;
       text-align: center;
@@ -88,53 +84,6 @@
           opacity: 1;
           transform: translate3d(0, 0, 0);
         }
-      }
-    }
-  }
-
-  .projectDesc {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    right: rem(30px);
-    text-align: right;
-
-    @media screen and (max-width: $tablet-width) {
-      right: initial;
-      text-align: initial;
-    }
-
-    h2 {
-      margin-bottom: rem(5px);
-      margin-top: rem(5px);
-    }
-
-    h4 {
-      margin-bottom: rem(5px);
-    }
-
-    p {
-      background-color: $bg-color;
-      padding: rem(15px);
-      text-align: initial;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    }
-  }
-
-  .wrapperReverse {
-    flex-direction: row-reverse;
-
-    @media screen and (max-width: $tablet-width) {
-      flex-direction: column;
-    }
-
-    .projectDesc {
-      text-align: left;
-      left: rem(30px);
-
-      @media screen and (max-width: $tablet-width) {
-        left: initial;
-        text-align: initial;
       }
     }
   }

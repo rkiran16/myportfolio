@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7f1acace.chunk.css",
+    "main.js": "/static/js/main.2db68e43.chunk.js",
+    "main.js.map": "/static/js/main.2db68e43.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+    "static/css/2.ac1ab58b.chunk.css": "/static/css/2.ac1ab58b.chunk.css",
+    "static/js/2.993703fe.chunk.js": "/static/js/2.993703fe.chunk.js",
+    "static/js/2.993703fe.chunk.js.map": "/static/js/2.993703fe.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d2aa90995606551df0b45c6998533cd9.js": "/precache-manifest.d2aa90995606551df0b45c6998533cd9.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.ac1ab58b.chunk.css.map": "/static/css/2.ac1ab58b.chunk.css.map",
+    "static/css/main.7f1acace.chunk.css.map": "/static/css/main.7f1acace.chunk.css.map",
+    "static/js/2.993703fe.chunk.js.LICENSE.txt": "/static/js/2.993703fe.chunk.js.LICENSE.txt",
+    "static/media/bookstore.png": "/static/media/bookstore.e26661ec.png",
+    "static/media/currybowl.png": "/static/media/currybowl.36403acc.png",
+    "static/media/learnCSS.png": "/static/media/learnCSS.e964e6b0.png",
+    "static/media/logo.png": "/static/media/logo.01e9c9d4.png",
+    "static/media/nyc.png": "/static/media/nyc.eaf04a70.png",
+    "static/media/profile.jpg": "/static/media/profile.651451b4.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.19ccc7f6.js",
+    "static/css/2.ac1ab58b.chunk.css",
+    "static/js/2.993703fe.chunk.js",
+    "static/css/main.7f1acace.chunk.css",
+    "static/js/main.2db68e43.chunk.js"
+  ]
+}
