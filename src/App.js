@@ -11,9 +11,9 @@ export default class App extends React.Component {
         return (
             <main className="app">
                 <Intro/>
+                <Work/>
                 <About/>
                 <Experience/>
-                <Work/>
                 <Contact/>
             </main>
         );

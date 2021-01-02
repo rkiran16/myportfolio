@@ -3,99 +3,135 @@
 
 .contact {
   display: flex;
-  justify-content: center;
   background-color: $primary-color;
-  flex-direction: column;
   position: relative;
   overflow: hidden;
   min-height: 100vh;
   min-width: 100vw;
 
+  @media screen and (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+
+  .headingContainer {
+    display: flex;
+    justify-content: center;
+    padding: rem(10px);
+    width: 50%;
+    align-items: center;
+    background-color: $secondary-color;
+
+    @media screen and (max-width: $tablet-width) {
+      width: 100%;
+      background-color: $primary-color;
+    }
+
+
+    h1 {
+      font-size: rem(80px);
+      line-height: 1;
+      letter-spacing: 0.1em;
+      font-weight: normal;
+      text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
+      position: relative;
+
+      @media screen and (max-width: $tablet-width) {
+        font-size: rem(60px);
+      }
+
+      &:after {
+        content: '';
+        border-bottom: 7px solid $orangered;
+        position: absolute;
+        bottom: rem(-25px);
+        right: rem(11px);
+        width: rem(150px);
+      }
+    }
+  }
+
   .contactForm {
     padding: rem(20px);
     display: flex;
-    flex-direction: inherit;
     align-items: center;
-    margin: rem(30px) auto;
+    margin: rem(50px) auto;
+    width: 50%;
+    flex-direction: column;
+
+    .imageWrapper {
+      border: solid var(--bio-image-border-width, 8px) var(--bio-image-border-color, $orangered);
+      overflow: hidden;
+      width: auto;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.75);
+
+      img {
+        width: rem(250px);
+        height: rem(250px);
+        object-fit: cover;
+        display: block;
+        transform: scale(1.2);
+      }
+    }
+
+    .mailLink {
+      text-decoration: none;
+      font-size: rem(30px);
+      margin-top: rem(30px);
+      color: $orangered;
+      transition: color 1s ease-in;
+      cursor: pointer;
+      position: relative;
+
+      &:hover {
+         opacity: 0.7;
+         &:after {
+           opacity: 1;
+           width: 100%;
+         }
+      }
+
+      &:after {
+        content: '';
+        border-bottom: 2px solid;
+        width: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: all 400ms ease-in-out;
+      }
+    }
+
 
     ul {
       display: flex;
-      align-items: stretch; /* Default */
-      margin: 0;
+      margin: rem(30px) 0 0 0;
       padding: 0;
 
       li {
         display: block;
         flex: 0 1 auto; /* Default */
         list-style-type: none;
-        margin-right: rem(10px);
+        margin-right: rem(15px);
 
         svg {
-          color: orangered;
+          color: $orangered;
         }
-      }
-    }
-
-    form {
-      display: flex;
-      justify-content: space-evenly;
-      flex-direction: column;
-      width: 100%;
-
-      input, textarea {
-        margin-bottom: rem(5px);
-        appearance: none;
-        border: 1px solid $bg-color;
-        line-height: 0;
-        width: 100%;
-        font-size: rem(20px);
-        background: $primary-color;
-        font-family: $font-stack;
-        display: block;
-        box-sizing: border-box;
-        padding: 15px 20px;
-        position: relative;
-        transition: all 0.25s cubic-bezier(.53,.01,.35,1.5);
-
-        &:focus {
-          outline: none;
-          background: white;
-          color: $bg-color;
-        }
-      }
-
-      button {
-        appearance: none;
-        border: 1px solid $bg-color;
-        font: rem(18px $font-stack);
-        padding: rem(10px);
-        background: transparent;
-        color: $bg-color;
-        border-radius: rem(5px);
-        text-decoration: none;
-
-        &:hover {
-          background-color: rgb(255, 255,255);
-          color: $bg-color;
-          cursor: pointer;
-        }
-      }
-
-      textarea {
-        line-height: initial;
       }
     }
   }
 
   .copyRight {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin: 0 auto;
-     width: 100%;
-     height: rem(40px);
-     padding: rem(10px);
-     position: absolute;
-     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: rem(40px);
+    padding: rem(10px);
+    position: absolute;
+    bottom: 0;
   }
 }

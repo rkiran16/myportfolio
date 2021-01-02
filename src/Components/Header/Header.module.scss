@@ -34,30 +34,13 @@
 }
 
 .hamburger {
-   display: none;
-   @media screen and (max-width: $tablet-width){
-     display: flex;
-     color: $primary-color;
-     background-color: Transparent;
-     background-repeat: no-repeat;
-     cursor: pointer;
-     overflow: hidden;
-     outline: none;
-     border: none;
-     width: fit-content;
-   }
-}
-
-.menuDivider {
-   position: fixed;
-   right: rem(72px);
-   height: 100vh;
-   z-index: $menu-mobile-zIndex;
-   border: 2px solid orangered;
-   opacity: 0.3;
-   display: flex;
-   margin: 0;
-   @media screen and (max-width: $tablet-width) {
-     display: none;
-   }
+  display: flex;
+  color: $white;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  width: fit-content;
 }
