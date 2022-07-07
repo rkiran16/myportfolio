@@ -1,0 +1,27 @@
+.banner {
+  position: relative;
+  display: flex;
+  padding: 329px 5% 105px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./arrow.svg"), linear-gradient(51deg, #EAB308, #EF4444);
+  background-position: 50% 100%, 0px 0px;
+  background-size: contain, auto;
+  background-repeat: no-repeat, repeat;
+}
+
+
+.fp-watermark {
+   display:none;
+}
+
+
+.profile-pic {
+   margin-left: -120px;
+   margin-top:0;
+
+   @media only screen and (max-width: 600px) {
+     margin-left: 0;
+     margin-top: -60px;
+   }
+}

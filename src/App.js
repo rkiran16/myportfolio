@@ -1,21 +1,27 @@
-import React from 'react';
-import './App.scss';
+import * as React from 'react'
 import Contact from "./Contact";
 import Intro from "./Intro";
-import About from "./About";
-import Experience from "./Experience";
+import Resume from "./Resume";
 import Work from "./Work";
+import ReactFullpage from '@fullpage/react-fullpage';
 
-export default class App extends React.Component {
-    render() {
+const App = () => (
+    <ReactFullpage
+      //fullpage options
+      licenseKey = {null}
+      navigation={true}
+      scrollingSpeed = {1000} /* Options here */
+      render={({ state, fullpageApi }) => {
         return (
-            <main className="app">
-                <Intro/>
-                <Work/>
-                <About/>
-                <Experience/>
-                <Contact/>
-            </main>
+          <ReactFullpage.Wrapper>
+            <div className="section"><Intro /></div>
+            <div className="section"><Resume /></div>
+            <div className="section"><Work /></div>
+            <div className="section"><Contact /></div>
+          </ReactFullpage.Wrapper>
         );
-    }
-}
+      }}
+    />
+  );
+
+  export default App;

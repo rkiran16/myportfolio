@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import Lottie from 'react-lottie'
 import animationData from './webDev.json'
-import { lottieWrapper } from './lottie.module.scss'
+import  './lottie.scss'
 
 class UncontrolledLottie extends Component {
     constructor(props) {
@@ -34,7 +34,7 @@ class UncontrolledLottie extends Component {
 
         return(
             <Fragment>
-                { this.state.loading && <div className={lottieWrapper}>
+                { this.state.loading && <div className="lottieWrapper">
                     <Lottie options={defaultOptions}
                             height={400}
                             width={400}

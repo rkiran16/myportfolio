@@ -1,22 +1,15 @@
 import React from 'react';
-import cx from 'classnames';
-import {work, big, grid} from './work.module.scss';
-import learnCSS from "./images/learnCSS.png";
-import curryBowl from "./images/currybowl.png";
-import nyc from "./images/nyc.png";
-import bookStore from "./images/bookstore.png";
+import { Box, Center, Heading } from "@chakra-ui/react";
 
 export default class Work extends React.Component {
     render() {
         return (
-            <section title="work" id="work" className={work}>
-                <div className={grid}>
-                    <img src={curryBowl} className={big} alt="Learn css"/>
-                    <img src={learnCSS} className={big} alt="Learn css"/>
-                    <img src={nyc} className={big} alt="Help Desk"/>
-                    <img src={bookStore} className={big} alt="Book Store"/>
-                </div>
-            </section>
+            <Box w='100%' p={[4,8]} h="100%" bg="gray.50">
+                <Center flexDirection="column">
+                    <Heading as="h2" mb={12} size="2xl">RECENT <Box as="span" color="#aa1f00">WORK</Box></Heading>
+                    <Box w="10%" mb={3} border='2px' borderColor='#aa1f00'/>
+                </Center>
+            </Box>
         )
     }
 };
