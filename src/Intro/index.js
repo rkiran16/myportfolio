@@ -100,7 +100,7 @@ const Intro = () => {
              </Flex>
              <Flex w={["100%", "100%","70%"]} p={4} maxW="6xl" 
                    alignItems="center" flexDirection={["column", "column", "row"]}
-                   bg="gray.100">
+                   bg="white">
                  <Box boxShadow='dark-lg' className="profile-pic">
                     <Image objectFit='cover'  boxSize='lg' src={ProfilePic} />
                  </Box>
