@@ -2,7 +2,7 @@ import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import "./intro.scss";
-import { Box, Image, Text, Stack,Flex,Heading,Button,Hide } from '@chakra-ui/react';
+import { Box, Image, Text, Stack,Flex,Heading,Link,Hide } from '@chakra-ui/react';
 import ProfilePic from "./profile.jpg";
 import Logo from "./logo.png";
 
@@ -65,7 +65,7 @@ window.onload = function() {
 
 const Intro = () => {
     return (
-        <Flex w="100%" h="100%" flexDirection={['column', 'column', 'row']}>
+        <Flex id="intro" w="100%" h="100%" flexDirection={['column', 'column', 'row']}>
              <Flex w={["100%", "100%","30%"]} 
              minH="25%" flexDirection={['row', 'row','column']} 
              justifyContent={["center","center","space-between"]} bg=" #aa1f00" p={[4,8]}>
@@ -116,13 +116,14 @@ const Intro = () => {
                             I enjoy creating smart user interface and imagine useful interaction, developing rich web experiences & web applications.
                             I am interested in building applications from ground up that are pixel-perfect, intuitive, dynamic experiences .
                         </Text>
-                        <Button size='md' height='60px' bg="white" 
+                        <Link size='md' height='60px' bg="white" 
+                                href="#resume"
                                 borderRadius="34px"
                                 p={4}
                                 color="#aa1f00" width='200px' border='4px'
                                 borderColor='#aa1f00'>
                             MY RESUME
-                        </Button>
+                        </Link>
                  </Box>
              </Flex>
         </Flex>

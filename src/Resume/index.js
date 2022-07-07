@@ -51,7 +51,7 @@ const Skill = ({skill,percentage,icon}) => {
 export default class Resume extends React.Component {
     render() {
         return(
-            <Box w='100%' p={[4,8]} bg="gray.50">
+            <Box id="resume" w='100%' h="100%" p={[4,8]} bg="gray.50">
                 <Center flexDirection="column">
                     <Heading as="h2" mb={12} size="2xl"><Box as="span" color="#aa1f00">My</Box> Resume</Heading>
                     <Box w="10%" mb={3} border='2px' borderColor='#aa1f00'/>
