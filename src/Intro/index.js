@@ -65,9 +65,9 @@ window.onload = function() {
 
 const Intro = () => {
     return (
-        <Flex id="intro" w="100%" h="100%" flexDirection={['column', 'column', 'row']}>
+        <Flex w="100%" h="100%" flexDirection={['column', 'column', 'row']}>
              <Flex w={["100%", "100%","30%"]} 
-             minH="25%" flexDirection={['row', 'row','column']} 
+             minH="25%" h="100%" flexDirection={['row', 'row','column']} 
              justifyContent={["center","center","space-between"]} bg=" #aa1f00" p={[4,8]}>
                  <Box>
                     <Image src={Logo} boxSize='150px'/>

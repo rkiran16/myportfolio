@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { Box } from '@chakra-ui/react';
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
 export default class Contact extends Component {
     render() {
         return (
-            <section title="contact" id="contact">
+            <Box w="100%" h="100%" bg="gray.100">
                 <div>
                     <h1>Get In Touch</h1>
                 </div>
@@ -31,7 +32,7 @@ export default class Contact extends Component {
                 <div>
                     <span>&copy; Ravi Kanculakunta 2014</span>
                 </div>
-            </section>
+            </Box>
         )
     }
 }

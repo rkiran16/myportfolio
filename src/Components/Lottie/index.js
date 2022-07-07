@@ -1,4 +1,5 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment } from 'react';
+import { Box } from '@chakra-ui/react';
 import Lottie from 'react-lottie'
 import animationData from './webDev.json'
 import  './lottie.scss'
@@ -12,7 +13,7 @@ class UncontrolledLottie extends Component {
     }
 
     componentDidMount() {
-        this.timerHandle = setTimeout(() => this.setState({ loading: false }), 2500);
+        this.timerHandle = setTimeout(() => this.setState({ loading: false }), 5500);
     }
 
     componentWillUnmount(){
@@ -34,12 +35,12 @@ class UncontrolledLottie extends Component {
 
         return(
             <Fragment>
-                { this.state.loading && <div className="lottieWrapper">
+                { this.state.loading && <Box bgGradient="linear(to-r, orange.600, #aa1f00)" className="lottieWrapper">
                     <Lottie options={defaultOptions}
                             height={400}
                             width={400}
                     />
-                </div> }
+                </Box> }
             </Fragment>
         )
     }

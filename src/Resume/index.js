@@ -51,14 +51,14 @@ const Skill = ({skill,percentage,icon}) => {
 export default class Resume extends React.Component {
     render() {
         return(
-            <Box id="resume" w='100%' h="100%" p={[4,8]} bg="gray.50">
+            <Box w='100%' p={[4,8]} bg="gray.50">
                 <Center flexDirection="column">
                     <Heading as="h2" mb={12} size="2xl"><Box as="span" color="#aa1f00">My</Box> Resume</Heading>
                     <Box w="10%" mb={3} border='2px' borderColor='#aa1f00'/>
                 </Center>
                 <Container maxW='8xl' mt={12}>
                     <Flex flexDirection={["column-reverse", "column-reverse", "row"]}>
-                        <Box width={["100%", "100%", "50%"]}>
+                        <Box h="100%" width={["100%", "100%", "50%"]}>
                             <Heading as="h3" mb={12} size="lg">Experience</Heading>
                             <VerticalTimeline layout="1-column-left" lineColor="#aa1f00">
                                 <TimeLineElement date="2017 - Present" icon={<FontAwesomeIcon icon={faBriefcase}/>}>

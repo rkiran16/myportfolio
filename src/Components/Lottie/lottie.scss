@@ -1,13 +1,11 @@
 @import "~sass-rem";
-@import "src/styles/_variables.scss";
 
 .lottieWrapper {
-  background-color: $bg-color;
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
-  z-index: $lottie-zIndex;
+  z-index: 200;
   top: 0;
   left: 0;
   position: fixed;

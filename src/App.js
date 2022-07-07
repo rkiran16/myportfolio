@@ -10,7 +10,7 @@ const App = () => (
       //fullpage options
       licenseKey = {null}
       navigation={true}
-      anchors={['intro', 'resume', 'work',"contact"]}
+      anchors={['intro', 'resume', 'work', 'contact']}
       scrollingSpeed = {1000} /* Options here */
       render={({ state, fullpageApi }) => {
         return (
