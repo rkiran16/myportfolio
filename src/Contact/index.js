@@ -18,7 +18,7 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <Box w="100%" h="100%"  p={[4,4,24]} bg="gray.100">
+            <Box w="100%" display="flex" justifyContent="center" h="100%"  p={[4,4,24]} bg="gray.100">
                 <Container maxW="8xl">
                     <Flex w="100%" h="100%" flexDirection={["column-reverse", "column-reverse", "row"]} >
                         <Flex w="60%" flexDirection="column" justifyContent="center" alignItems={["center", "center", "baseline"]}>
@@ -47,9 +47,9 @@ export default class Contact extends Component {
                                 </Stack>
                           </Stack>    
                         </Flex>
-                        <Box w="40%" h="100%"> 
+                        <Flex alignItems="center"> 
                              <Lottie options={defaultOptions} height={400}   width={400} />
-                        </Box>
+                        </Flex>
                     </Flex>
                 </Container>
             </Box>
