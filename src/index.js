@@ -1,18 +1,12 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
+import "./app.css";
 import * as serviceWorker from './serviceWorker';
-import UncontrolledLottie from "./Components/Lottie";
-import { ChakraProvider } from '@chakra-ui/react'
 
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render(<React.StrictMode>
-  <ChakraProvider>
-      <App />
-      <UncontrolledLottie/>
-  </ChakraProvider>
-</React.StrictMode>);
+root.render(<React.StrictMode><App /></React.StrictMode>);
 
 
 // If you want your app to work offline and load faster, you can change

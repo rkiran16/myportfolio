@@ -1,120 +1,139 @@
-import React from 'react';
-import { Heading, Container, Box, Divider, Flex, Center, Spacer, Text,Link } from '@chakra-ui/react';
-import {
-    Slider,
-    SliderTrack,
-    SliderFilledTrack,
-    SliderThumb,
-  } from '@chakra-ui/react';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faBriefcase} from '@fortawesome/free-solid-svg-icons'
-import {faReact, faCss3, faHtml5, faJs, faServicestack } from "@fortawesome/free-brands-svg-icons";
+import React from "react";
+import ProfilePic from "../Intro/profile.jpg";
 
-const style = { background: '#F7FAFC', color: 'BlackAlpha 800', border: '1px solid #aa1f00' };
-const iconStyle = { background: '#F7FAFC', color: '#aa1f00'}
-const arrowStyle = { borderRight: '7px solid #aa1f00' };
+const SkillSet = ["react", "vuejs", "js", "node-js", "python", "css3", "html5", "yarn"]
 
-const TimeLineElement = ({children,date, icon}) => {
+const Resume = () => {
     return (
-        <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={style} contentArrowStyle={arrowStyle}
-            date={date} iconStyle={iconStyle}
-            icon={icon} >
-                {children} 
-        </VerticalTimelineElement>
+        <>
+            <div className="container mt-lg-5 shadow">
+                <div className="row">
+                    <div className="sidebar-wrapper col-12 col-sm-4">
+                        <div className="p-4 text-center">
+                            <img className="mb-4 img-thumbnail" src={ProfilePic} alt="" />
+                            <h3>Ravi Kanculakunta</h3>
+                            <h3 className="tagline">Sr.Front End Developer, IBM IX</h3>
+                        </div>
+
+                        <div className="container-block">
+                            <ul className="list-unstyled contact-list">
+                                <li className="d-flex align-items-center"><i className="fa-solid fa-envelope me-2"></i><a href="mailto: ravikancula@gmail.com">ravikancula@gmail.com</a></li>
+                                <li className="d-flex align-items-center"><i className="fa-solid fa-phone me-2"></i><a href="tel:0123 456 789">425-614-9246</a></li>
+                                <li className="d-flex align-items-center"><i className="fa-brands fa-linkedin-in me-2"></i><a href="#" target="_blank" rel="noreferrer" >linkedin.com/in/ravikanculakunta</a></li>
+                                <li className="d-flex align-items-center"><i className="fa-brands fa-github me-2"></i><a href="#" target="_blank" rel="noreferrer" >github.com/rkiran16</a></li>
+                            </ul>
+                        </div>
+                        <div className="education-container container-block">
+                            <h2 className="container-block-title">Education</h2>
+                            <div className="item">
+                                <h4 className="degree">MS in Computer Science</h4>
+                                <h5 className="meta">Stratford University</h5>
+                                <div className="time">2008 - 2010</div>
+                            </div>
+                            <div className="item">
+                                <h4 className="degree">BS in Computer Science</h4>
+                                <h5 className="meta">Jawaharlal Nehru Technological University</h5>
+                                <div className="time">2004 - 2007</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="main-wrapper p-4 p-sm-5 bg-white col-12 col-sm-8">
+                        <section className="section summary-section">
+                            <h2 className="section-title"><span className="icon-holder"><i className="fa-solid fa-user"></i></span>Career Profile</h2>
+                            <div className="summary">
+                                <p>
+                                    I am a Sr Front End Developer with 8 years expereince, meaningful contributions to teams of varying size and scope . I have proven experience at Cardinal Health , Sally Beauty, Northern Trust in helping companies create and maintain better code base for reusability. Capable of learning from Project Leads and architects while still nurturing Junior developers. Experience in driving projects forward as the development team leader, facilitating projects from concept to launch. Passionate about learning and development with desire to apply skills on a larger development team. Eager to tackle more complex problems and continue to find ways to maximize user efficiency.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section className="section experiences-section">
+                            <h2 className="section-title"><span className="icon-holder"><i className="fa-solid fa-briefcase"></i></span>Experiences</h2>
+                            <div className="item">
+                                <div className="meta">
+                                    <div className="upper-row">
+                                        <h3 className="job-title">Lead Developer</h3>
+                                        <div className="time">2022 - Present</div>
+                                    </div>
+                                    <div className="company">Startup Hubs, San Francisco</div>
+                                </div>
+                                <div className="details">
+                                    <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                                </div>
+                            </div>
+
+                            <div className="item">
+                                <div className="meta">
+                                    <div className="upper-row">
+                                        <h3 className="job-title">Senior Software Engineer</h3>
+                                        <div className="time">2018 - 2022</div>
+                                    </div>
+                                    <div className="company">Google, London</div>
+                                </div>
+                                <div className="details">
+                                    <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+
+                                </div>
+                            </div>
+
+                            <div className="item">
+                                <div className="meta">
+                                    <div className="upper-row">
+                                        <h3 className="job-title">UI Developer</h3>
+                                        <div className="time">2016 - 2018</div>
+                                    </div>
+                                    <div className="company">Amazon, London</div>
+                                </div>
+                                <div className="details">
+                                    <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <section className="skills-section section">
+                            <h2 className="section-title"><span className="icon-holder"><i className="fa-solid fa-rocket"></i></span>Skills &amp; Proficiency</h2>
+                            <ul className="list-inline">
+                                {SkillSet.map(skill => {
+                                    return (
+                                        <li className="list-inline-item me-3 border border-info p-2">
+                                            <i className={`display-4 fa-brands fa-${skill}`}></i>
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        </section>
+
+                        <section className="section projects-section">
+                            <h2 className="section-title"><span className="icon-holder"><i className="fa-solid fa-archive"></i></span>Projects</h2>
+                            <div className="intro">
+                                <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                            </div>
+                            <div className="item">
+                                <span className="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-5-startup-template-for-software-projects/" target="_blank">CoderPro</a></span> - <span className="project-tagline">A responsive website template designed to help developers launch their software projects. </span>
+
+                            </div>
+                            <div className="item">
+                                <span className="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-5-template-for-saas-businesses/" target="_blank">Launch</a></span> - <span className="project-tagline">A responsive website template designed to help startups promote their products or services.</span>
+                            </div>
+                            <div className="item">
+                                <span className="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-5-vcard-portfolio-template-for-software-developers/" target="_blank">DevCard</a></span> - <span className="project-tagline">A portfolio website template designed for software developers.</span>
+                            </div>
+                            <div className="item">
+                                <span className="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">Nova Pro</a></span> - <span className="project-tagline">A responsive Bootstrap theme designed to help app developers promote their mobile apps</span>
+                            </div>
+                            <div className="item">
+                                <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">DevStudio</a></span> -
+                                <span className="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }
 
-const Skill = ({skill,percentage,icon}) => {
-    return (
-        <Box mb={6}>
-            <Flex>
-                <Text>{skill}</Text>
-                <Spacer/>
-                <Text>{`${percentage}%`}</Text>
-            </Flex>  
-            <Slider aria-label='slider-ex-2'  defaultValue={percentage}>
-                <SliderTrack>
-                    <SliderFilledTrack bg="#aa1f00" />
-                </SliderTrack>
-                <SliderThumb boxSize={8}>
-                  <Box color="#aa1f00">{icon}</Box>
-                </SliderThumb>
-            </Slider>
-      </Box> 
-    )
-}
-
-export default class Resume extends React.Component {
-    render() {
-        return(
-            <Box w='100%' p={[4,8]} bg="gray.50">
-                <Center flexDirection="column">
-                    <Heading as="h2" mb={12} size="2xl"><Box as="span" color="#aa1f00">My</Box> Resume</Heading>
-                    <Box w="10%" mb={3} border='2px' borderColor='#aa1f00'/>
-                </Center>
-                <Container maxW='8xl' mt={12}>
-                    <Flex flexDirection={["column-reverse", "column-reverse", "row"]}>
-                        <Box h="100%" width={["100%", "100%", "50%"]}>
-                            <Heading as="h3" mb={12} size="lg">Experience</Heading>
-                            <VerticalTimeline layout="1-column-left" lineColor="#aa1f00">
-                                <TimeLineElement date="2017 - Present" icon={<FontAwesomeIcon icon={faBriefcase}/>}>
-                                    <Box>
-                                        <Heading as="h3" size="md">Sr Application Developer @ IBM IX</Heading>
-                                        <Heading as="h4" size="sm">San Francisco, CA</Heading>
-                                        <Divider height="10px"/>
-                                        <p>React, React Native,Node.js,Redux, Vanilla JS , AEM , Sketch, Invision.</p>
-                                    </Box>
-                                </TimeLineElement>
-                                <TimeLineElement date="2014 - 2017" icon={<FontAwesomeIcon icon={faBriefcase}/>}>
-                                    <Box>
-                                        <Heading as="h3" size="md">Front End Developer @ Resource Ammirati</Heading>
-                                        <Heading as="h4" size="sm">Columbus, OH</Heading>
-                                        <Divider height="10px"/>
-                                        <p>React, HTML, SCSS, Vanilla JS, Atomic design Methodology, Sketch, Adobe PhotoShop.</p>
-                                    </Box>
-                                </TimeLineElement>
-                                <TimeLineElement date="2012 - 2014" icon={<FontAwesomeIcon icon={faBriefcase}/>}>
-                                    <Box>
-                                        <Heading as="h3" size="md">Web Developer @ ICC</Heading>
-                                        <Heading as="h4" size="sm">Columbus, OH</Heading>
-                                        <Divider height="10px"/>
-                                        <p>Flex, As3, Robotlegs, HTML, SCSS, Vanilla JS.</p>
-                                    </Box>
-                                </TimeLineElement>
-                                <TimeLineElement date="2010-2012" icon={<FontAwesomeIcon icon={faBriefcase}/>}>
-                                    <Box>
-                                        <Heading as="h3" size="md">Web Developer @ Smart Solutions</Heading>
-                                        <Heading as="h4" size="sm">San Francisco, CA</Heading>
-                                        <Divider height="10px"/>
-                                        <p>Flex, As3, Cairnogram.</p>
-                                    </Box>
-                                </TimeLineElement>
-                            </VerticalTimeline>
-                        </Box>
-                        <Box w={["100%", "100%", "80%"]} ml={[0,0,24]}>
-                            <Heading as="h3" mb={12} size="lg">My Work Skills</Heading>
-                            <Skill skill="HTML" percentage="90" icon={<FontAwesomeIcon icon={faHtml5} size="1x" />} />
-                            <Skill skill="Javascript" percentage="70" icon={<FontAwesomeIcon icon={faJs} size="1x" />} />
-                            <Skill skill="CSS" percentage="80" icon={<FontAwesomeIcon icon={faCss3} size="1x" />} />
-                            <Skill skill="React" percentage="75" icon={<FontAwesomeIcon icon={faReact} size="1x" />} />
-                            <Skill skill="Server Side" percentage="58" icon={<FontAwesomeIcon icon={faServicestack} size="1x" />} />
-                            <Link size='md' mb={12} height='60px' bg="white" 
-                                borderRadius="34px"
-                                p={4}
-                                target="_blank"
-                                href="https://ogimg.s3.us-east-1.amazonaws.com/Resume.pdf?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMSJHMEUCIDJtn4RNwkfBPYkRVZhbLYZc83kREB6MSRgGPvgrom%2F0AiEA344CHOZ39eH2lvt5vmMGu%2Bk1JO%2FPV9z7rxT%2FSxLffv0q8QII3v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARABGgwwNTE0MjY1OTM1MDkiDFPnbUUjK6K75S%2BeoirFApkl50c9wuBeRc0vKzfv9kUiLRvm6W9baXHm8fnogkE%2FQolz%2FHag3m2FWZhm6e8rxc13d%2FldBI8VBRcW4%2Fy5%2Bi4ABa1n2zTV8y7tt14wgB2IKUoOXfluiCuYsG%2FEkQ05HzHwR1TZ%2FlWIVTX7GN3yr9qiwJdzjE0KCEN7VLz6YTg7YkYOZiVlmC9drX4HqvV8QWDf3%2BfnTY9acqbVeieZGsITJ3%2F%2B9kJNnnxfj%2BotMXP5Ce%2FEq1YWoADw%2FgAZRHwE9woMF9%2FFf37h2iisk8lbL02jthrXessm3B4NRnCnUKPZKLdYRtswVVlEBrWZuraPHOdiZQyrvfkMmEecenzMQGjfOH2qujf79dSkKtMgXJVTMqFW0dBQAwvBvDt9AhOPFraOEikEWZB%2BC1bXIhCUfBhYo3t0ygyVWK4qz%2BHflNWM9Nw9I%2BwwsIWdlgY6swKIKh6O8oRYK%2FBxOY7jY5GIzgQHUpXnkvYKJDglwclyMMiyOzAfvQT%2F%2BL%2BG%2Be9dfDuzLlOppfUVi6abIDf26gp2i6Bvjoi3j2swY1rYSeS9bbeyw3sCuitDiSoCc%2F%2FRWUoGbFh0%2BaQvDPWprSIEjKUsfTxOYh7lx%2BnSaEGxRj5ci8G%2FSET5EuuZ2Z1Nx0zbwdCukXqeMN79KKkR2CBMLSglreTIbBx75utYpHRcnKykyHgRckyGEmgqbhxeT8cRRtBvpgI1fCwvqYbgbqN99WTfYhDL93cic1GI89WHkDBL2CQWe%2FTh2AF24O6gYztYPUAwuw7knyCvmX%2FTacWD1enduvbN%2BlcE9IEE3RHHwPDjOLr%2FIqKVwzblDf04xWBsl85lOjigLGR%2FuiAQkMiZbhmKLorJ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220707T233030Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQX6KDRLSXFBKGS7S%2F20220707%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=8e15368b41794299635fa18da40204cab873d58197369944b68244b591da4ca9"
-                                color="#aa1f00" width='200px' border='4px'
-                                borderColor='#aa1f00'>
-                                DOWNLOAD RESUME
-                            </Link>
-                        </Box>
-                    </Flex>
-                </Container>
-            </Box>
-        )
-    }
-}
+export default Resume;
