@@ -25,11 +25,11 @@ const Work = () => {
     return (
         <div className="mt-5">
             <h1 className="mb-5 display-4 fw-bold" id="work">My Work</h1>
-            <div className="row row-cols-1 row-cols-md-2 g-4">
+            <div data-masonry='{"percentPosition": true }' className="row row-cols-1 row-cols-md-2 g-4">
                 {workData && workData.map((work, index) => {
                     return (
-                        <div key={`${work.title}${index}`} className="col d-flex align-items-stretch">
-                            <Link to={`/${work.url}`}>
+                        <div key={`${work.title}${index}`} className="col">
+                            <Link className="d-block" to={`/${work.url}`}>
                                 <div className="card h-100 border-success text-end bg-transparent">
                                     <img src={work.image} className="img-fluid" alt={work.title}></img>
                                     <div className="card-body">
