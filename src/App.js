@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import ProjectStorybook from './Work/ProjectStorybook';
 import Resume from './Resume';
+import ProjectCurryBowl from './Work/ProjectCurrybowl';
 
 
 const Home = () => {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
    {
       path: "/projectstorybook",
       element: <><ProjectStorybook /></>
+   },
+   {
+      path: "/projectcurrybowl",
+      element: <><ProjectCurryBowl /></>
    },
    {
       path: "/resume",
