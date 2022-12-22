@@ -9,6 +9,7 @@ import {
 import ProjectStorybook from './Work/ProjectStorybook';
 import Resume from './Resume';
 import ProjectCurryBowl from './Work/ProjectCurrybowl';
+import ProjectBritannica from './Work/ProjectBritannica';
 
 
 const Home = () => {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
    {
       path: "/resume",
       element: <Resume />
+   },
+   {
+      path: "/projectbrittanica",
+      element: <><ProjectBritannica /></>
    }
 ]);
 
