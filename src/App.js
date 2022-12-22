@@ -5,26 +5,26 @@ import Work from './Work';
 import {
    createBrowserRouter,
    RouterProvider,
- } from "react-router-dom";
+} from "react-router-dom";
 import ProjectStorybook from './Work/ProjectStorybook';
 import Resume from './Resume';
 
 
- const Home = () => {
+const Home = () => {
    return (
       <>
-         <div className="container mt-5 mb-5">
+         <div className="container-lg mt-5 mb-5">
             <Intro />
             <Work />
          </div>
       </>
    )
- }
+}
 
- const router = createBrowserRouter([
+const router = createBrowserRouter([
    {
-     path: "/",
-     element: <Home />,
+      path: "/",
+      element: <Home />,
    },
    {
       path: "/projectstorybook",
@@ -34,13 +34,13 @@ import Resume from './Resume';
       path: "/resume",
       element: <Resume />
    }
- ]);
+]);
 
 const App = () => (
    <>
-      <Header/>
+      <Header />
       <RouterProvider router={router} />
    </>
 );
 
-  export default App;
+export default App;

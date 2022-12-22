@@ -34,7 +34,7 @@ const ProfileSection = () => {
 
 const Intro = () => {
     return (
-        <div className='d-flex flex-column w-100 flex-sm-row py-sm-5 justify-content-between'>
+        <div className='d-flex flex-column w-100 flex-md-row py-sm-5 justify-content-between'>
             <ProfileSection />
             <div className='d-flex w-100 p-sm-3 animate__animated animate__fadeInRight'>
                 <img src={ProfilePic} className="img-fluid shadow-lg" />

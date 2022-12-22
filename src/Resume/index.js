@@ -43,7 +43,12 @@ const Resume = () => {
                             <h2 className="section-title"><span className="icon-holder"><i className="fa-solid fa-user"></i></span>Career Profile</h2>
                             <div className="summary">
                                 <p>
-                                    I am a Sr Front End Developer with 8 years expereince, meaningful contributions to teams of varying size and scope . I have proven experience at Cardinal Health , Sally Beauty, Northern Trust in helping companies create and maintain better code base for reusability. Capable of learning from Project Leads and architects while still nurturing Junior developers. Experience in driving projects forward as the development team leader, facilitating projects from concept to launch. Passionate about learning and development with desire to apply skills on a larger development team. Eager to tackle more complex problems and continue to find ways to maximize user efficiency.
+                                    I am a Sr Front End Developer with 8 years expereince, meaningful contributions to teams of varying size and scope .
+                                    I have proven experience at Cardinal Health , Sally Beauty, Northern Trust in helping companies create and maintain better code base for reusability.
+                                    Capable of learning from Project Leads and architects while still nurturing Junior developers.
+                                    Experience in driving projects forward as the development team leader, facilitating projects from concept to launch.
+                                    Passionate about learning and development with desire to apply skills on a larger development team.
+                                    Eager to tackle more complex problems and continue to find ways to maximize user efficiency.
                                 </p>
                             </div>
                         </section>
@@ -53,28 +58,46 @@ const Resume = () => {
                             <div className="item">
                                 <div className="meta">
                                     <div className="upper-row">
-                                        <h3 className="job-title">Lead Developer</h3>
-                                        <div className="time">2022 - Present</div>
+                                        <h3 className="job-title">Sr. Front-End Developer</h3>
+                                        <div className="time">2017 - Present</div>
                                     </div>
-                                    <div className="company">Startup Hubs, San Francisco</div>
+                                    <div className="company">IBM iX, San Francisco</div>
                                 </div>
                                 <div className="details">
-                                    <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                                    <p>
+                                        At IBM iX, Prior expereince with design system using Atomic design helped me to transition over as a React Developer because it allows to create reusable components.
+                                        As a React Developer, I am responsible for the design and implementation of dynamic user interfaces(UIs) and UI components for various platforms.
+                                    </p>
+                                    <p>
+                                        For Sally Beauty, I was involved to create native app using React Native. I am responsible for building functional UI components.
+                                        With power of hooks , we built concise UI components and realted logic is tightly coupled inside of custom hook.Simplied how to make
+                                        code composable and reusable.
+                                    </p>
+                                    <p>
+                                        At Cardinal Health , I worked as Lead developer in helping them build design system using Lit-Html, SCSS and Storybook. Collaborated
+                                        with designers to achieve single source of components, patterns and styles and unify disjointed experience so that they are visually cohesive
+                                        and appear to be part of same ecosystem.
+                                        I am also responsible for building restructuring applications utilizing Micro Front-End architecture utilizing Webpack Module Federation.
+                                        As a Lead Developer , I Assisted team members in architectural compliance, functional accuracy validation, and adherence to appropriate industry standards.
+                                    </p>
                                 </div>
                             </div>
 
                             <div className="item">
                                 <div className="meta">
                                     <div className="upper-row">
-                                        <h3 className="job-title">Senior Software Engineer</h3>
-                                        <div className="time">2018 - 2022</div>
+                                        <h3 className="job-title">Front-End Developer</h3>
+                                        <div className="time">2014 - 2017</div>
                                     </div>
-                                    <div className="company">Google, London</div>
+                                    <div className="company">Resource/Ammirati, Columbus</div>
                                 </div>
                                 <div className="details">
-                                    <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-
+                                    <p>
+                                        At Resource/Ammirati as a Front-End Developer,  I worked on building Responsive Web Design and Micro sites for multiple clients with HTML,CSS and JS.In large amounts,  I was involved in building
+                                        design system using principles of <a href="https://bradfrost.com/blog/post/atomic-web-design/">Atomic Design Methodology </a> for notable clients
+                                        such as Toys“R”Us , Barnes & Noble , RCI.
+                                    </p>
+                                    <p>Collaborated with designers by clear communicating through words and via software such as Zeplin, Sketch and Adobe XD to bring prototypes in motion </p>
                                 </div>
                             </div>
 
@@ -82,12 +105,16 @@ const Resume = () => {
                                 <div className="meta">
                                     <div className="upper-row">
                                         <h3 className="job-title">UI Developer</h3>
-                                        <div className="time">2016 - 2018</div>
+                                        <div className="time">2010 - 2014</div>
                                     </div>
-                                    <div className="company">Amazon, London</div>
+                                    <div className="company">ICC, Columbus</div>
                                 </div>
                                 <div className="details">
-                                    <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                                    <p>
+                                        Started as a Adobe Flex Developer for project <a href="https://www.mheducation.com/prek-12/program/microsites/MKTSP-RBT01M0/experience.html">SRA FLEX Literacy</a>.
+                                        <i>SRA Flex Literacy</i> delivers personalized reading instructions for students in grades 3 and above by creating a student-specific learning path. Involved in both in UI developemnt and serivce layer.
+                                        After sunset of Adobe Flex , I have moved on to become web-developer using HTML,CSS and JS.
+                                    </p>
                                 </div>
                             </div>
 
@@ -98,7 +125,7 @@ const Resume = () => {
                             <ul className="list-inline">
                                 {SkillSet.map(skill => {
                                     return (
-                                        <li className="list-inline-item me-3 border border-info p-2">
+                                        <li className="list-inline-item me-3 mb-2 border border-info p-2">
                                             <i className={`display-4 fa-brands fa-${skill}`}></i>
                                         </li>
                                     )
@@ -112,21 +139,20 @@ const Resume = () => {
                                 <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
                             </div>
                             <div className="item">
-                                <span className="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-5-startup-template-for-software-projects/" target="_blank">CoderPro</a></span> - <span className="project-tagline">A responsive website template designed to help developers launch their software projects. </span>
-
+                                <span className="project-title"><span>Design system</span></span> - <span className="project-tagline">
+                                    Built using storybook which is component library for building UI components and pages in
+                                    isolation.
+                                </span>
                             </div>
                             <div className="item">
-                                <span className="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-5-template-for-saas-businesses/" target="_blank">Launch</a></span> - <span className="project-tagline">A responsive website template designed to help startups promote their products or services.</span>
+                                <span className="project-title"><span>Outlook Dashboard</span></span> - <span className="project-tagline">
+                                    A Web application that would provide status of Meeting Rooms by retreiving information from Outlook API
+                                </span>
                             </div>
                             <div className="item">
-                                <span className="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-5-vcard-portfolio-template-for-software-developers/" target="_blank">DevCard</a></span> - <span className="project-tagline">A portfolio website template designed for software developers.</span>
-                            </div>
-                            <div className="item">
-                                <span className="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">Nova Pro</a></span> - <span className="project-tagline">A responsive Bootstrap theme designed to help app developers promote their mobile apps</span>
-                            </div>
-                            <div className="item">
-                                <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">DevStudio</a></span> -
-                                <span className="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>
+                                <span className="project-title"><span>Britannica</span></span> - <span className="project-tagline">
+                                    A Responsive Web application built with VanillaJs provides list of all countries by continent integrating with countries API
+                                </span>
                             </div>
                         </section>
                     </div>
