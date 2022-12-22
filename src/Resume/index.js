@@ -10,7 +10,7 @@ const Resume = () => {
                 <div className="row">
                     <div className="sidebar-wrapper col-12 col-sm-4">
                         <div className="p-4 text-center">
-                            <img className="mb-4 img-thumbnail" src={ProfilePic} alt="" />
+                            <img className="mb-4 img-thumbnail" src={ProfilePic} alt="Ravi Kanculakunta" />
                             <h3>Ravi Kanculakunta</h3>
                             <h3 className="tagline">Sr.Front End Developer, IBM IX</h3>
                         </div>
@@ -19,8 +19,8 @@ const Resume = () => {
                             <ul className="list-unstyled contact-list">
                                 <li className="d-flex align-items-center"><i className="fa-solid fa-envelope me-2"></i><a href="mailto: ravikancula@gmail.com">ravikancula@gmail.com</a></li>
                                 <li className="d-flex align-items-center"><i className="fa-solid fa-phone me-2"></i><a href="tel:0123 456 789">425-614-9246</a></li>
-                                <li className="d-flex align-items-center"><i className="fa-brands fa-linkedin-in me-2"></i><a href="#" target="_blank" rel="noreferrer" >linkedin.com/in/ravikanculakunta</a></li>
-                                <li className="d-flex align-items-center"><i className="fa-brands fa-github me-2"></i><a href="#" target="_blank" rel="noreferrer" >github.com/rkiran16</a></li>
+                                <li className="d-flex align-items-center"><i className="fa-brands fa-linkedin-in me-2"></i><a href="linkedin.com/in/ravikanculakunta" target="_blank" rel="noreferrer" >linkedin.com/in/ravikanculakunta</a></li>
+                                <li className="d-flex align-items-center"><i className="fa-brands fa-github me-2"></i><a href="github.com/rkiran16" target="_blank" rel="noreferrer" >github.com/rkiran16</a></li>
                             </ul>
                         </div>
                         <div className="education-container container-block">
@@ -139,9 +139,14 @@ const Resume = () => {
                                 <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
                             </div>
                             <div className="item">
-                                <span className="project-title"><span>Design system</span></span> - <span className="project-tagline">
+                                <span className="project-title"><a rel="noreferrer" href="https://6347942fd7d88ca0feeba317-fhbbhadkff.chromatic.com/?path=/story/introduction--page&globals=selectedStylesheetID:global" target="_blank">Design system</a></span> - <span className="project-tagline">
                                     Built using storybook which is component library for building UI components and pages in
                                     isolation.
+                                </span>
+                            </div>
+                            <div className="item">
+                                <span className="project-title"><a rel="noreferrer" href="https://rkiran16.github.io/restaurant" target="_blank" >Curry Bowl</a></span> - <span className="project-tagline">
+                                    A Responsive web application for Restaurant helps user to view menu and order food online.
                                 </span>
                             </div>
                             <div className="item">
