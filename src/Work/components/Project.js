@@ -8,18 +8,18 @@ const BackButton = () => {
     return (
         <div className="d-flex mb-4">
             <Link className="text-uppercase fs-5" to="/">
-                <FontAwesomeIcon className='me-2' icon={faArrowLeft } />
+                <FontAwesomeIcon className='me-2' icon={faArrowLeft} />
                 Back
             </Link>
         </div>
     )
 }
 
-const ProjectDetails = ({details}) => {
-    const {projectName, projectDescription, projectDetails } = details;
+const ProjectDetails = ({ details }) => {
+    const { projectName, projectDescription, projectDetails } = details;
     return (
         <>
-            {details && 
+            {details &&
                 <>
                     <h1 className="text-uppercase animate__animated animate__fadeInDown">{projectName}</h1>
                     <p className="mt-5 lh-base animate__animated animate__fadeInDown">{projectDescription}</p>
@@ -28,11 +28,11 @@ const ProjectDetails = ({details}) => {
                             {projectDetails && projectDetails.map((detail) => {
                                 return (
                                     <>
-                                       <dt className="col-sm-3">{detail?.name}</dt>
-                                        <dd className="col-sm-9">
-                                          {detail?.value}
-                                          {detail.urlText? <a target="_blank" rel="noopener noreferrer" href={detail.url}>{detail.urlText}</a> : ''}
-                                          {detail.stack ? detail.stack.map((s) => <FontAwesomeIcon className="ms-2" icon={s} size='2x'/>) : ''}
+                                        <dt className="col-sm-3">{detail?.name}</dt>
+                                        <dd className="col-sm-9 d-flex">
+                                            {detail?.value}
+                                            {detail.urlText ? <a target="_blank" rel="noopener noreferrer" href={detail.url}>{detail.urlText}</a> : ''}
+                                            {detail.stack ? detail.stack.map((s) => <div className="border d-flex justify-content-center me-2 p-2"><FontAwesomeIcon icon={s} size='2x' /></div>) : ''}
                                         </dd>
                                     </>
                                 )
@@ -45,10 +45,10 @@ const ProjectDetails = ({details}) => {
     )
 }
 
-const ProjectImages = ({images}) => {
+const ProjectImages = ({ images }) => {
     return (
         <>
-            {images && images.map((image,index) => {
+            {images && images.map((image, index) => {
                 return (
                     <figure key={`${index}-${image.name}`} className="figure animate__animated animate__fadeInRight">
                         <img src={image.src} className="figure-img img-fluid rounded" alt={image.name}></img>
@@ -59,15 +59,15 @@ const ProjectImages = ({images}) => {
     )
 }
 
-const Project = ({data}) => {
-    return(
+const Project = ({ data }) => {
+    return (
         <>
-            {data && 
+            {data &&
                 <div className="container mt-5">
                     <BackButton />
                     <div className="row">
                         <div className="col-12 col-md-6">
-                            <ProjectDetails details={data.details}/>
+                            <ProjectDetails details={data.details} />
                         </div>
                         <div className="col-12 col-md-6">
                             <ProjectImages images={data.images} />
