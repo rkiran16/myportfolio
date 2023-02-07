@@ -2,10 +2,16 @@ import React from "react";
 import DesignSystem from "./images/designsystem.png";
 import CurryBowl from "./images/currybowl.png";
 import Brittanica from "./images/britannica.jpg";
+import Exposure from "./images/exposure.png";
 import { Link } from "react-router-dom";
 
 const Work = () => {
     const workData = [
+        {
+            url: "projectexposure",
+            image: Exposure,
+            title: "Exposure"
+        },
         {
             url: "projectstorybook",
             image: DesignSystem,
