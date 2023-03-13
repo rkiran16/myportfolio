@@ -23,10 +23,10 @@ const ProfileSection = () => {
                 </p>
             </div>
             <div className='mt-4 mb-4'>
-                <Link to="/resume" type="button" className='btn  btn-warning me-4 btn-lg animate__animated animate__fadeInUp '>
+                <Link to="/resume" type="button" className='btn  btn-warning me-4 rounded-pill btn-lg animate__animated animate__fadeInUp '>
                     View Resume
                 </Link>
-                <a href="#work" type="button" className='btn btn-warning btn-lg animate__animated animate__fadeInUp '>
+                <a href="#work" type="button" className='btn btn-warning btn-lg rounded-pill animate__animated animate__fadeInUp '>
                     View Work
                 </a>
             </div>
@@ -41,7 +41,7 @@ const Intro = () => {
             <div className='d-flex flex-column w-100 flex-md-row justify-content-between'>
                 <ProfileSection />
                 <div className='d-flex w-100 p-sm-3 animate__animated animate__fadeInRight'>
-                    <img src={ProfilePic} alt="Ravi Kanculakunta" className="img-fluid shadow-lg" />
+                    <img src={ProfilePic} alt="Ravi Kanculakunta" className="img-fluid rounded-4 shadow-lg" />
                 </div>
             </div>
             <div className='divider line one-line'>
