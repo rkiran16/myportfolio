@@ -2,7 +2,6 @@ body {
     background-color: #79dfc1;
     color: #0d503c;
     background-image: linear-gradient(45deg, #79dfc1 21%, #1aa179 100%);
-
 }
 
 .logo {
@@ -19,16 +18,6 @@ a {
 a:hover {
     color: #0d503c !important;
 }
-
-.btn-outline-success {
-    color: #0d503c;
-}
-
-.btn-outline-success:hover {
-    text-decoration: none;
-    background-color: transparent;
-}
-
 
 
 a:after {
@@ -241,4 +230,35 @@ p {
 
 .main-wrapper .projects-section .item {
     margin-bottom: 15px;
+}
+
+
+
+
+
+.divider {
+    display: flex;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+}
+
+.line {
+    align-items: center;
+    margin: 3em -1em;
+}
+
+.line::after,
+.line::before {
+    height: 3px;
+    margin: 0 1em;
+}
+
+
+.one-line::after,
+.one-line::before {
+    background: black;
 }

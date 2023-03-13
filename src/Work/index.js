@@ -29,7 +29,7 @@ const Work = () => {
         }
     ]
     return (
-        <div className="mt-5">
+        <div id="work" className="mt-5 min-vh-100">
             <h1 className="mb-5 display-4 fw-bold" id="work">My Work</h1>
             <div data-masonry='{"percentPosition": true }' className="row row-cols-1 row-cols-md-2 g-4">
                 {workData && workData.map((work, index) => {

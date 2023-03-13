@@ -1,7 +1,8 @@
 import React from 'react';
 import ProfilePic from "./profile.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
 
@@ -22,10 +23,12 @@ const ProfileSection = () => {
                 </p>
             </div>
             <div className='mt-4 mb-4'>
-                <Link to="/resume" type="button" className='btn btn-outline-success btn-lg animate__animated animate__fadeInUp '>
+                <Link to="/resume" type="button" className='btn  btn-warning me-4 btn-lg animate__animated animate__fadeInUp '>
                     View Resume
-                    <FontAwesomeIcon className='ms-2' icon={faSquareArrowUpRight} />
                 </Link>
+                <a href="#work" type="button" className='btn btn-warning btn-lg animate__animated animate__fadeInUp '>
+                    View Work
+                </a>
             </div>
         </div>
     )
@@ -34,10 +37,21 @@ const ProfileSection = () => {
 
 const Intro = () => {
     return (
-        <div className='d-flex flex-column w-100 flex-md-row py-sm-5 justify-content-between'>
-            <ProfileSection />
-            <div className='d-flex w-100 p-sm-3 animate__animated animate__fadeInRight'>
-                <img src={ProfilePic} alt="Ravi Kanculakunta" className="img-fluid shadow-lg" />
+        <div className='min-vh-100'>
+            <div className='d-flex flex-column w-100 flex-md-row justify-content-between'>
+                <ProfileSection />
+                <div className='d-flex w-100 p-sm-3 animate__animated animate__fadeInRight'>
+                    <img src={ProfilePic} alt="Ravi Kanculakunta" className="img-fluid shadow-lg" />
+                </div>
+            </div>
+            <div className='divider line one-line'>
+                <a href='https://github.com/rkiran16' rel="noreferrer" target="_blank">
+                    <FontAwesomeIcon className='me-4 fs-1' icon={faSquareGithub} />
+                </a>
+                <a href='https://www.linkedin.com/in/ravikanculakunta/' rel="noreferrer" target="_blank">
+                    <FontAwesomeIcon className='me-4 fs-1' icon={faLinkedin} />
+                </a>
+                <a href="mailto: ravikancula@gmail.com"><FontAwesomeIcon className='fs-1' icon={faEnvelope} /></a>
             </div>
         </div>
     )
