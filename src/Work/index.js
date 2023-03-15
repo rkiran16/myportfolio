@@ -35,7 +35,7 @@ const Work = () => {
                 {workData && workData.map((work, index) => {
                     return (
                         <div key={`${work.title}${index}`} className="col">
-                            <Link className="d-block" to={`/${work.url}`}>
+                            <Link className="d-block underline" to={`/${work.url}`}>
                                 <div className="card h-100 border-success text-end bg-transparent">
                                     <img src={work.image} className="img-fluid object-fit-cover" style={{ maxHeight: '231px', objectFit: "cover" }} alt={work.title}></img>
                                     <div className="card-body">

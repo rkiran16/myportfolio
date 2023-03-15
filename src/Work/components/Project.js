@@ -7,7 +7,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 const BackButton = () => {
     return (
         <div className="d-flex mb-4">
-            <Link className="text-uppercase fs-5" to="/">
+            <Link className="text-uppercase underline fs-5" to="/">
                 <FontAwesomeIcon className='me-2' icon={faArrowLeft} />
                 Back
             </Link>
@@ -31,7 +31,7 @@ const ProjectDetails = ({ details }) => {
                                         <dt className="col-sm-3">{detail?.name}</dt>
                                         <dd className="col-sm-9 d-flex">
                                             {detail?.value}
-                                            {detail.urlText ? <a target="_blank" rel="noopener noreferrer" href={detail.url}>{detail.urlText}</a> : ''}
+                                            {detail.urlText ? <a target="_blank" className="underline" rel="noopener noreferrer" href={detail.url}>{detail.urlText}</a> : ''}
                                             {detail.stack ? detail.stack.map((s) => <div className="border d-flex justify-content-center me-2 p-2"><FontAwesomeIcon icon={s} size='2x' /></div>) : ''}
                                         </dd>
                                     </>

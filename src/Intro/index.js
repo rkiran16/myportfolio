@@ -23,10 +23,10 @@ const ProfileSection = () => {
                 </p>
             </div>
             <div className='mt-4 mb-4'>
-                <Link to="/resume" type="button" className='btn  btn-warning me-4 rounded-pill btn-lg animate__animated animate__fadeInUp '>
+                <Link to="/resume" type="button" className='btn  btn-dark me-4 btn-lg animate__animated animate__fadeInUp '>
                     View Resume
                 </Link>
-                <a href="#work" type="button" className='btn btn-warning btn-lg rounded-pill animate__animated animate__fadeInUp '>
+                <a href="#work" type="button" className='btn btn-dark btn-lg animate__animated animate__fadeInUp '>
                     View Work
                 </a>
             </div>

@@ -10,17 +10,20 @@ body {
 
 a {
     color: #0d503c;
-    display: inline-block;
-    position: relative;
     text-decoration: none;
 }
 
-a:hover {
+a.underline {
+    display: inline-block;
+    position: relative;
+}
+
+a.underline:hover {
     color: #0d503c !important;
 }
 
 
-a:after {
+a.underline:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -33,7 +36,7 @@ a:after {
     transition: transform 0.25s ease-out;
 }
 
-a:hover:after {
+a.underline:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
