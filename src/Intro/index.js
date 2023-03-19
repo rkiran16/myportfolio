@@ -1,8 +1,6 @@
 import React from 'react';
+import Social from '../Social';
 import ProfilePic from "./profile.jpg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 const ProfileSection = () => {
@@ -40,16 +38,8 @@ const Intro = () => {
                         <img src={ProfilePic} alt="Ravi Kanculakunta" className="img-fluid rounded-4 shadow" />
                     </div>
                 </div>
-                {/* <div className='divider line one-line'>
-                <a href='https://github.com/rkiran16' rel="noreferrer" target="_blank">
-                    <FontAwesomeIcon className='me-4 fs-1' icon={faSquareGithub} />
-                </a>
-                <a href='https://www.linkedin.com/in/ravikanculakunta/' rel="noreferrer" target="_blank">
-                    <FontAwesomeIcon className='me-4 fs-1' icon={faLinkedin} />
-                </a>
-                <a href="mailto: ravikancula@gmail.com"><FontAwesomeIcon className='fs-1' icon={faEnvelope} /></a>
-            </div> */}
             </div>
+            <Social />
         </div>
     )
 }

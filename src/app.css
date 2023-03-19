@@ -1,5 +1,14 @@
+html,
 body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
     color: #0d503c;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .logo {
@@ -11,12 +20,21 @@ body {
 }
 
 .bg-green-white {
-    background: linear-gradient(to right,
-            #03fd57 0%,
-            #03fd57 70%,
-            #81feab 70%,
-            #81feab 100%);
+    background-color: #03fd57;
 }
+
+@media screen and (min-width: 680px) {
+    .bg-green-white {
+        background: linear-gradient(to right,
+                #03fd57 0%,
+                #03fd57 70%,
+                #81feab 70%,
+                #81feab 100%);
+    }
+
+}
+
+
 
 a {
     color: #0d503c;
@@ -243,35 +261,4 @@ p {
 
 .main-wrapper .projects-section .item {
     margin-bottom: 15px;
-}
-
-
-
-
-
-.divider {
-    display: flex;
-}
-
-.divider::before,
-.divider::after {
-    content: "";
-    flex: 1;
-}
-
-.line {
-    align-items: center;
-    margin: 3em -1em;
-}
-
-.line::after,
-.line::before {
-    height: 3px;
-    margin: 0 1em;
-}
-
-
-.one-line::after,
-.one-line::before {
-    background: black;
 }
