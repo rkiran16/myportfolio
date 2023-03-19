@@ -31,11 +31,11 @@ const Work = () => {
     return (
         <div id="work" className="d-flex flex-column justify-content-center container min-vh-100">
             <h1 className="mb-5 display-4 fw-bold" id="work"><u>My Work</u></h1>
-            <div data-masonry='{"percentPosition": true }' className="row row-cols-1 row-cols-md-2 g-4">
+            <div className="row row-cols-1 row-cols-md-2 g-4">
                 {workData && workData.map((work, index) => {
                     return (
                         <div key={`${work.title}${index}`} className="col">
-                            <Link className="d-block underline" to={`/${work.url}`}>
+                            <Link className="d-block underline animate__animated" to={`/${work.url}`}>
                                 <div className="card h-100 border-success text-end bg-transparent">
                                     <img src={work.image} className="img-fluid object-fit-cover" style={{ maxHeight: '231px', objectFit: "cover" }} alt={work.title}></img>
                                     <div className="card-body">

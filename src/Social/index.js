@@ -5,7 +5,7 @@ import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Social = () => {
   return (
-    <div className='position-fixed top-50 end-0 translate-middle-y p-2 bg-green shadow me-4'>
+    <div className='position-fixed top-50 end-0 translate-middle-y p-2 bg-green shadow me-4 animate__animated animate__zoomIn animate__delay-1s'>
       <ul className='list-unstyled mb-0'>
         <li className='p-2'>
           <a href='https://github.com/rkiran16' rel="noreferrer" target="_blank">
