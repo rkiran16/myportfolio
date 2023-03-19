@@ -11,15 +11,15 @@ import Resume from './Resume';
 import ProjectCurryBowl from './Work/ProjectCurrybowl';
 import ProjectBritannica from './Work/ProjectBritannica';
 import ProjectExposure from "./Work/ProjectExposure";
+import Skills from './Skills';
 
 
 const Home = () => {
    return (
       <>
-         <div className="container-lg mt-5 mb-5">
-            <Intro />
-            <Work />
-         </div>
+         <Intro />
+         <Skills />
+         <Work />
       </>
    )
 }

@@ -3,31 +3,26 @@ import ProfilePic from "./profile.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { Link } from 'react-router-dom';
 
 
 const ProfileSection = () => {
     return (
         <div className='d-flex flex-column w-100 p-sm-2 '>
             <div className='mb-4'>
-                <h1 id="intro" className='display-3 fw-bold animate__animated animate__fadeInUp'>
+                <h1 id="intro" className='display-2 fw-bold animate__animated animate__fadeInUp'>
                     Hi! I Am
                 </h1>
-                <h2 className='display-4 fw-bold animate__animated animate__fadeInUp'>
+                <h2 className='display-3 fw-bold animate__animated animate__fadeInUp'>
                     Ravi Kanculakunta
                 </h2>
-                <h3 className='display-6 mb-3 animate__animated animate__fadeInUp'>Based in San Francisco</h3>
-                <p className="h3 lead animate__animated animate__fadeInUp">
-                    Developing User Interfaces for over <strong className="me-1">8 years</strong>
-                    as a Front End Developer
-                </p>
+                <h3 className='mb-3 animate__animated animate__fadeInUp'>Based in San Francisco</h3>
+                <h4 className="blockquote animate__animated animate__fadeInUp">
+                    A <em className=''>Front-End Developer</em> passionate about creating interactive applications and experience on web.
+                </h4>
             </div>
-            <div className='mt-4 mb-4'>
-                <Link to="/resume" type="button" className='btn  btn-dark me-4 btn-lg animate__animated animate__fadeInUp '>
-                    View Resume
-                </Link>
-                <a href="#work" type="button" className='btn btn-dark btn-lg animate__animated animate__fadeInUp '>
-                    View Work
+            <div className='mb-2'>
+                <a href="#work" type="button" className='btn btn-outline-dark btn-lg animate__animated animate__fadeInUp '>
+                    View My Work
                 </a>
             </div>
         </div>
@@ -37,14 +32,15 @@ const ProfileSection = () => {
 
 const Intro = () => {
     return (
-        <div className='min-vh-100'>
-            <div className='d-flex flex-column w-100 flex-md-row justify-content-between'>
-                <ProfileSection />
-                <div className='d-flex w-100 p-sm-3 animate__animated animate__fadeInRight'>
-                    <img src={ProfilePic} alt="Ravi Kanculakunta" className="img-fluid rounded-4 shadow-lg" />
+        <div className='bg-green-white'>
+            <div className='min-vh-100 container d-flex'>
+                <div className='d-flex flex-column align-items-center w-100 flex-md-row justify-content-between'>
+                    <ProfileSection />
+                    <div className='d-flex w-100 p-sm-3 animate__animated animate__fadeInRight'>
+                        <img src={ProfilePic} alt="Ravi Kanculakunta" className="img-fluid rounded-4 shadow" />
+                    </div>
                 </div>
-            </div>
-            <div className='divider line one-line'>
+                {/* <div className='divider line one-line'>
                 <a href='https://github.com/rkiran16' rel="noreferrer" target="_blank">
                     <FontAwesomeIcon className='me-4 fs-1' icon={faSquareGithub} />
                 </a>
@@ -52,6 +48,7 @@ const Intro = () => {
                     <FontAwesomeIcon className='me-4 fs-1' icon={faLinkedin} />
                 </a>
                 <a href="mailto: ravikancula@gmail.com"><FontAwesomeIcon className='fs-1' icon={faEnvelope} /></a>
+            </div> */}
             </div>
         </div>
     )

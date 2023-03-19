@@ -1,11 +1,21 @@
 body {
-    background-color: #79dfc1;
     color: #0d503c;
-    background-image: linear-gradient(45deg, #79dfc1 21%, #1aa179 100%);
 }
 
 .logo {
     font-family: 'Monoton', cursive;
+}
+
+.bg-green {
+    background-color: #03fd57;
+}
+
+.bg-green-white {
+    background: linear-gradient(to right,
+            #03fd57 0%,
+            #03fd57 70%,
+            #81feab 70%,
+            #81feab 100%);
 }
 
 a {
