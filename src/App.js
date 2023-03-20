@@ -1,6 +1,6 @@
 import * as React from 'react'
-import Header from './Header';
-import Intro from "./Intro";
+import Header from './components/Header';
+import Hero from "./Hero";
 import Work from './Work';
 import {
    createBrowserRouter,
@@ -11,14 +11,14 @@ import Resume from './Resume';
 import ProjectCurryBowl from './Work/ProjectCurrybowl';
 import ProjectBritannica from './Work/ProjectBritannica';
 import ProjectExposure from "./Work/ProjectExposure";
-import Skills from './Skills';
+import AboutMe from './AboutMe';
 
 
 const Home = () => {
    return (
       <>
-         <Intro />
-         <Skills />
+         <Hero />
+         <AboutMe />
          <Work />
       </>
    )

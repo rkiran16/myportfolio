@@ -7,7 +7,7 @@ const Header = () => {
                 <a className="display-4 logo underline" href="/">RK</a>
                 <ul className="nav nav-pills">
                     <li className="nav-item border-end border-1 border-opacity-50 border-secondary">
-                        <a className="nav-link underline text-black fw-bold animate__animated animate__fadeInDown" href="/#intro">Intro</a>
+                        <a className="nav-link underline text-black fw-bold animate__animated animate__fadeInDown" href="/#about">About Me</a>
                     </li>
                     <li className="nav-item border-end border-1 border-opacity-50 border-secondary">
                         <a className="nav-link underline text-black fw-bold animate__animated animate__fadeInDown" href="/#work">My Work</a>

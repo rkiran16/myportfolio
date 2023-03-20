@@ -9,16 +9,16 @@ const Social = () => {
       <ul className='list-unstyled mb-0'>
         <li className='p-2'>
           <a href='https://github.com/rkiran16' rel="noreferrer" target="_blank">
-            <FontAwesomeIcon className='fs-1' icon={faSquareGithub} />
+            <FontAwesomeIcon className='fs-3' icon={faSquareGithub} />
           </a>
         </li>
         <li className='p-2'>
           <a href='https://www.linkedin.com/in/ravikanculakunta/' rel="noreferrer" target="_blank">
-            <FontAwesomeIcon className='fs-1' icon={faLinkedin} />
+            <FontAwesomeIcon className='fs-3' icon={faLinkedin} />
           </a>
         </li>
         <li className='p-2'>
-          <a href="mailto: ravikancula@gmail.com"><FontAwesomeIcon className='fs-1' icon={faEnvelope} /></a>
+          <a href="mailto: ravikancula@gmail.com"><FontAwesomeIcon className='fs-4' icon={faEnvelope} /></a>
         </li>
       </ul>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
-import ProfilePic from "../Intro/profile.jpg";
+import ProfilePic from "../Hero/profile.jpg";
 
-const SkillSet = ["react", "vuejs", "js", "node-js", "python", "css3", "html5", "yarn"]
+const SkillSet = ["react", "vuejs", "js", "node-js", "python", "css3", "sass", "html5", "yarn"]
 
 const Resume = () => {
     return (
@@ -43,7 +43,7 @@ const Resume = () => {
                             <h2 className="section-title"><span className="icon-holder"><i className="fa-solid fa-user"></i></span>Career Profile</h2>
                             <div className="summary">
                                 <p>
-                                    I am a Sr Front End Developer with 8 years expereince, meaningful contributions to teams of varying size and scope .
+                                    I am a Sr Front End Developer with 8 years experience, meaningful contributions to teams of varying size and scope .
                                     I have proven experience at Cardinal Health , Sally Beauty, Northern Trust in helping companies create and maintain better code base for reusability.
                                     Capable of learning from Project Leads and architects while still nurturing Junior developers.
                                     Experience in driving projects forward as the development team leader, facilitating projects from concept to launch.

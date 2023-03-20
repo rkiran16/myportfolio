@@ -1,5 +1,5 @@
 import React from 'react';
-import Social from '../Social';
+import Social from '../components/Social';
 import ProfilePic from "./profile.jpg";
 
 
@@ -19,8 +19,8 @@ const ProfileSection = () => {
                 </h4>
             </div>
             <div className='mb-2'>
-                <a href="#work" type="button" className='btn btn-outline-dark btn-lg animate__animated animate__fadeInUp '>
-                    View My Work
+                <a href="#work" type="button" className='button slide_right animate__animated animate__fadeInUp '>
+                    VIEW MY WORK
                 </a>
             </div>
         </div>
@@ -28,7 +28,7 @@ const ProfileSection = () => {
 }
 
 
-const Intro = () => {
+const Hero = () => {
     return (
         <div className='bg-green-white'>
             <div className='min-vh-100 container d-flex'>
@@ -44,4 +44,4 @@ const Intro = () => {
     )
 }
 
-export default Intro;
+export default Hero;
