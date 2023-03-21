@@ -19,7 +19,7 @@ const ProjectBritannica = () => {
         },
         {
           name: "URL",
-          url: "https://exposure-eta.vercel.app",
+          url: "https://rkiran16.github.io/britannica-countries/",
           urlText: "Britannica Countries",
         }, {
           name: "Date",

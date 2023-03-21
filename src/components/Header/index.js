@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
     return (
         <header className="sticky-top">
-            <nav className="navbar navbar-expand-lg border-bottom border-success border-4 bg-green-white px-3">
+            <nav className="navbar navbar-expand-lg border-bottom border-success border-4 bg-light px-3">
                 <div className="container-fluid">
                     <a className="display-4 logo underline" href="/">RK</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
