@@ -12,6 +12,11 @@ const Header = () => {
                     <li className="nav-item border-end border-1 border-opacity-50 border-secondary">
                         <a className="nav-link underline text-black fw-bold animate__animated animate__fadeInDown" href="/#work">My Work</a>
                     </li>
+                    <li className="nav-item border-end border-1 border-opacity-50 border-secondary">
+                        <a href="/resume" className='nav-link underline text-black fw-bold animate__animated animate__fadeInDown'>
+                            Resume
+                        </a>
+                    </li>
                     <li className="nav-item">
                         <a className="nav-link underline text-black fw-bold animate__animated animate__fadeInDown" href="mailto: ravikancula@gmail.com">
                             Fire Me An Email

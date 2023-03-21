@@ -38,7 +38,7 @@ const Work = () => {
                             <Link className="d-block underline animate__animated" to={`/${work.url}`}>
                                 <div className="card h-100 border-success text-end bg-transparent">
                                     <img src={work.image} className="img-fluid object-fit-cover" style={{ maxHeight: '231px', objectFit: "cover" }} alt={work.title}></img>
-                                    <div className="card-body">
+                                    <div className="card-body bg-white">
                                         <h5 className="card-title fw-bold">{work.title}</h5>
                                     </div>
                                 </div>

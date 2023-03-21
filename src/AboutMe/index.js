@@ -10,7 +10,7 @@ const Skills = () => {
       <ul className="list-inline d-flex flex-wrap">
         {SkillSet.map(skill => {
           return (
-            <li key={skill} className="list-inline-item me-2 my-2 border bg-green p-3">
+            <li key={skill} className="list-inline-item me-2 my-2 bg-light p-3">
               <i className={`fs-1 fa-brands fa-${skill}`}></i>
             </li>
           )
@@ -27,11 +27,11 @@ const AboutMe = () => {
       <div className="row">
         <div className='col-12 col-md-8'>
           <p className='animate__animated animate__fadeInUp'>
-            Hello! My Name is <span className='text-green fw-bold'>Ravi Kanculakunta</span> , I like to build things that live on internet.
+            Hello! My Name is <span className='text-orange fw-bold'>Ravi Kanculakunta</span> , I like to build things that live on internet.
             I started my career in 2012 as a Adobe Flex Developer then transitioned into web development by learning HTML & CSS.
           </p>
           <p>
-            Currently, I work as a Sr Front-End Developer at <span className='text-green fw-bold'>IBM IX</span> making meaningful contributions
+            Currently, I work as a Sr Front-End Developer at <span className='text-orange fw-bold'>IBM IX</span> making meaningful contributions
             to teams of varying size and scope .
             I'm passionate about learning and development with desire to apply skills on a larger development team.
             Eager to tackle more complex problems and continue to find ways to maximize user efficiency.

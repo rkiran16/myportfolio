@@ -16,11 +16,11 @@ import AboutMe from './AboutMe';
 
 const Home = () => {
    return (
-      <>
+      <div className='bg-green-white'>
          <Hero />
          <AboutMe />
          <Work />
-      </>
+      </div>
    )
 }
 

@@ -16,27 +16,18 @@ body {
     font-family: 'Monoton', cursive;
 }
 
-.bg-green {
-    background-color: #03fd57;
-}
-
-.text-green {
-    color: #03fd57;
-}
 
 .bg-green-white {
-    background-color: #03fd57;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 }
 
-@media screen and (min-width: 680px) {
-    .bg-green-white {
-        background: linear-gradient(to right,
-                #03fd57 0%,
-                #03fd57 60%,
-                #81feab 60%,
-                #81feab 100%);
-    }
 
+.bg-orange {
+    background-color: #F55555;
+}
+
+.text-orange {
+    color: #F55555;
 }
 
 /* START Anchor Styles */
@@ -64,7 +55,7 @@ a.underline:after {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: #0d503c;
+    background-color: #F55555;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -87,15 +78,16 @@ a.underline:hover:after {
     font-size: 18px;
     letter-spacing: 1px;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 #3F4650;
+    box-shadow: inset 0 0 0 0 #F55555;
     -webkit-transition: ease-in-out 0.3s;
     -moz-transition: ease-in-out 0.3s;
     transition: ease-in-out 0.3s;
 }
 
 .slide_right:hover {
-    box-shadow: inset 400px 0 0 0 #3F4650;
+    box-shadow: inset 400px 0 0 0 #F55555;
     color: #ffffff;
+    border-color: #F55555;
 }
 
 /* End Button Styles */
@@ -297,7 +289,7 @@ a.underline:hover:after {
 
 .about-me-img-wrapper {
     position: relative;
-    border: 4px solid #03fd57;
+    border: 4px solid #F55555;
     width: 300px;
     height: 300px;
 
@@ -317,7 +309,8 @@ a.underline:hover:after {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 255, 255, 0.3);
+    background: #F55555;
+    opacity: 0.2;
     transition: all .3s linear;
 }
 
