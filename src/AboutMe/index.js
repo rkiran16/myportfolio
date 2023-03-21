@@ -6,12 +6,12 @@ const SkillSet = ["react", "js", "html5", "css3", "sass", "node-js", "python", "
 
 const Skills = () => {
   return (
-    <div className="w-75 mb-4">
+    <div className="mb-4">
       <ul className="list-inline d-flex flex-wrap">
         {SkillSet.map(skill => {
           return (
             <li key={skill} className="list-inline-item me-2 my-2 bg-light p-3">
-              <i className={`fs-1 fa-brands fa-${skill}`}></i>
+              <i className={`fs-3 fa-brands fa-${skill}`}></i>
             </li>
           )
         })}
@@ -26,11 +26,11 @@ const AboutMe = () => {
       <h1 className="mb-5 display-6 fw-bold"><u>About Me</u></h1>
       <div className="row">
         <div className='col-12 col-md-8'>
-          <p className='animate__animated animate__fadeInUp'>
+          <p className='animate__animated animate__fadeInUp text-align-justify lh-md'>
             Hello! My Name is <span className='text-orange fw-bold'>Ravi Kanculakunta</span> , I like to build things that live on internet.
             I started my career in 2012 as a Adobe Flex Developer then transitioned into web development by learning HTML & CSS.
           </p>
-          <p>
+          <p className='text-align-justify lh-sm'>
             Currently, I work as a Sr Front-End Developer at <span className='text-orange fw-bold'>IBM IX</span> making meaningful contributions
             to teams of varying size and scope .
             I'm passionate about learning and development with desire to apply skills on a larger development team.
@@ -44,7 +44,7 @@ const AboutMe = () => {
             VIEW MY RESUME
           </Link>
         </div>
-        <div className='col-12 col-md-4 d-flex justify-content-end'>
+        <div className='col-12 col-md-4 justify-content-end d-none d-md-flex'>
           <div className='about-me-img-wrapper'>
             <figure className="about-me-img">
               <img src={ProfilePic} alt="Ravi Kanculakunta" />
