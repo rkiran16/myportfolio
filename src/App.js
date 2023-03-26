@@ -6,11 +6,7 @@ import {
    createBrowserRouter,
    RouterProvider,
 } from "react-router-dom";
-import ProjectStorybook from './Work/ProjectStorybook';
 import Resume from './Resume';
-import ProjectCurryBowl from './Work/ProjectCurrybowl';
-import ProjectBritannica from './Work/ProjectBritannica';
-import ProjectExposure from "./Work/ProjectExposure";
 import AboutMe from './AboutMe';
 
 
@@ -18,8 +14,8 @@ const Home = () => {
    return (
       <div className='bg-green-white'>
          <Hero />
-         <AboutMe />
          <Work />
+         <AboutMe />
       </div>
    )
 }
@@ -30,25 +26,9 @@ const router = createBrowserRouter([
       element: <Home />,
    },
    {
-      path: "/projectstorybook",
-      element: <><ProjectStorybook /></>
-   },
-   {
-      path: "/projectcurrybowl",
-      element: <><ProjectCurryBowl /></>
-   },
-   {
       path: "/resume",
       element: <Resume />
    },
-   {
-      path: "/projectbrittanica",
-      element: <><ProjectBritannica /></>
-   },
-   {
-      path: "/projectexposure",
-      element: <ProjectExposure />
-   }
 ]);
 
 const App = () => (

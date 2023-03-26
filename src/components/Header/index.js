@@ -19,7 +19,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item border-end border-1 border-opacity-50 border-secondary">
                                 <a href="/resume" className='nav-link underline text-black fw-bold animate__animated animate__fadeInDown'>
-                                    Resume
+                                    View Resume
                                 </a>
                             </li>
                             <li className="nav-item">

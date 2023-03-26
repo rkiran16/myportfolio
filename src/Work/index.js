@@ -1,49 +1,31 @@
 import React from "react";
-import DesignSystem from "./images/designsystem.png";
-import CurryBowl from "./images/currybowl.png";
-import Brittanica from "./images/britannica.jpg";
-import Exposure from "./images/exposure.png";
-import { Link } from "react-router-dom";
+import ProjectCard from "../components/ProjectCard";
+import workData from "./data";
 
 const Work = () => {
-    const workData = [
-        {
-            url: "projectexposure",
-            image: Exposure,
-            title: "Exposure"
-        },
-        {
-            url: "projectstorybook",
-            image: DesignSystem,
-            title: "Design System with Storybook"
-        },
-        {
-            url: "projectcurrybowl",
-            image: CurryBowl,
-            title: "Curry Bowl"
-        },
-        {
-            url: "projectbrittanica",
-            image: Brittanica,
-            title: "Brittanica"
-        }
-    ]
     return (
-        <div id="work" className="d-flex flex-column justify-content-center container min-vh-100 my-4">
+        <div id="work" className="d-flex flex-column justify-content-center px-3 min-vh-100 my-4">
             <h1 className="mb-5 display-6 fw-bold" id="work"><u>My Work</u></h1>
-            <div className="row row-cols-1 row-cols-md-2 g-4 mb-4">
+            <div className="row row-cols-1 row-cols-md-3 g-2 mb-4">
                 {workData && workData.map((work, index) => {
+                    const { id, title, image, date } = work;
                     return (
-                        <div key={`${work.title}${index}`} className="col">
-                            <Link className="d-block underline animate__animated" to={`/${work.url}`}>
-                                <div className="card h-100 border-success text-end bg-transparent">
-                                    <img src={work.image} className="img-fluid object-fit-cover" style={{ maxHeight: '231px', objectFit: "cover" }} alt={work.title}></img>
-                                    <div className="card-body bg-white">
-                                        <h5 className="card-title fw-bold">{work.title}</h5>
+                        <>
+                            <div key={`${id}${index}`} className="col" data-bs-toggle="modal" data-bs-target={`#${id}Modal`}>
+                                <div className="project-card-wrapper">
+                                    <div className="position-absolute top-50 start-50 translate-middle">
+                                        <img src={image} className="img-fluid animate__animated shadow" alt={title}></img>
+                                    </div>
+                                    <div className="position-absolute w-100 bottom-0 p-2">
+                                        <div className="d-flex justify-content-between">
+                                            <h5>{title}</h5>
+                                            <p className="mb-0">{date}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </Link>
-                        </div>
+                            </div>
+                            <ProjectCard work={work} />
+                        </>
                     )
                 })}
             </div>
