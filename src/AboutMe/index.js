@@ -10,8 +10,8 @@ const Skills = () => {
       <ul className="list-inline d-flex flex-wrap">
         {SkillSet.map(skill => {
           return (
-            <li key={skill} className="list-inline-item me-2 my-2 bg-light p-3">
-              <i className={`fs-3 fa-brands fa-${skill}`}></i>
+            <li key={skill} className="list-inline-item me-2 my-2 bg-orange p-3">
+              <i className={`fs-3 fa-brands text-white fa-${skill}`}></i>
             </li>
           )
         })}

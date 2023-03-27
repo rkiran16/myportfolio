@@ -4,7 +4,7 @@ const ProjectCard = ({ work }) => {
   const { id, title, images, projectDescription, projectDetails } = work;
   return (
     <div className="modal fade" id={`${id}Modal`} tabindex="-1" aria-labelledby={`${id}ModalLabel`} aria-hidden="true">
-      <div className="modal-dialog modal-dialog-centered modal-lg">
+      <div className="modal-dialog modal-fullscreen-sm-down modal-dialog-centered modal-lg">
         <div className="modal-content">
           <div className="modal-header">
             <h1 className="modal-title fs-3" id={`${id}ModalLabel`}>{title}</h1>
@@ -41,7 +41,7 @@ const ProjectCard = ({ work }) => {
                         <dd className="col-sm-9 d-flex">
                           {detail?.value}
                           {detail.urlText ? <a target="_blank" className="underline" rel="noopener noreferrer" href={detail.url}>{detail.urlText}</a> : ''}
-                          {detail.stack ? detail.stack.map((s) => <div className="border d-flex justify-content-center me-2 p-2"><FontAwesomeIcon icon={s} size='2x' /></div>) : ''}
+                          {detail.stack ? detail.stack.map((s) => <div className="border d-flex justify-content-center bg-orange me-2 p-2"><FontAwesomeIcon className='text-white' icon={s} size='2x' /></div>) : ''}
                         </dd>
                       </>
                     )
@@ -49,9 +49,6 @@ const ProjectCard = ({ work }) => {
                 </dl>
               </div>
             </div>
-          </div>
-          <div className="modal-footer">
-            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
