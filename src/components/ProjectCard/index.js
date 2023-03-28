@@ -7,7 +7,7 @@ const ProjectCard = ({ work }) => {
       <div className="modal-dialog modal-fullscreen-sm-down modal-dialog-centered modal-lg">
         <div className="modal-content">
           <div className="modal-header">
-            <h1 className="modal-title fs-3" id={`${id}ModalLabel`}>{title}</h1>
+            <h1 className="modal-title fs-3 text-color7" id={`${id}ModalLabel`}>{title}</h1>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div className="modal-body p-0">
@@ -31,14 +31,14 @@ const ProjectCard = ({ work }) => {
               </button>
             </div>
             <div className="p-3">
-              <p className="mt-5 lh-base animate__animated animate__fadeInDown">{projectDescription}</p>
+              <p className="mt-5 lh-base animate__animated animate__fadeInDown text-color7">{projectDescription}</p>
               <div className="my-3 animate__animated animate__fadeInDown">
                 <dl className="row">
                   {projectDetails && projectDetails.map((detail) => {
                     return (
                       <>
-                        <dt className="col-sm-3">{detail?.name}</dt>
-                        <dd className="col-sm-9 d-flex">
+                        <dt className="col-sm-3 text-color7">{detail?.name}</dt>
+                        <dd className="col-sm-9 d-flex text-color7">
                           {detail?.value}
                           {detail.urlText ? <a target="_blank" className="underline" rel="noopener noreferrer" href={detail.url}>{detail.urlText}</a> : ''}
                           {detail.stack ? detail.stack.map((s) => <div className="border d-flex justify-content-center bg-orange me-2 p-2"><FontAwesomeIcon className='text-white' icon={s} size='2x' /></div>) : ''}

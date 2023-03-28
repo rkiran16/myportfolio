@@ -12,7 +12,7 @@ import AboutMe from './AboutMe';
 
 const Home = () => {
    return (
-      <div className='bg-green-white'>
+      <div className='bg-color1'>
          <Hero />
          <Work />
          <AboutMe />
