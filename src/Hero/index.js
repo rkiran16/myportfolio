@@ -15,7 +15,7 @@ const ProfileSection = () => {
                 </h2>
                 <h3 className='mb-3 animate__animated animate__fadeInUp'>Based in San Francisco</h3>
                 <h4 className="blockquote animate__animated animate__fadeInUp">
-                    A <em className=''>Front-End Developer</em> passionate about creating interactive applications and experience on web.
+                    A <em className=''>Front-End Developer</em> fond of creating web applications and bring them to life using code.
                 </h4>
             </div>
             <div className='mb-2'>
