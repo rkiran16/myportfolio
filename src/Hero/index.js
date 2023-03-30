@@ -32,7 +32,7 @@ const Hero = () => {
     return (
         <div className='py-4 py-md-0'>
             <div className='min-vh-100 container d-flex'>
-                <div className='d-flex flex-column-reverse align-items-center w-100 flex-md-row justify-content-between'>
+                <div className='d-flex flex-column-reverse align-items-center w-100 flex-md-row justify-content-evenly justify-content-md-between'>
                     <ProfileSection />
                     <div className='d-flex w-100 p-sm-3 justify-content-center justify-content-md-end animate__animated animate__fadeInRight'>
                         <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_m9fz64i8.json"  background="transparent"  speed="1"  loop autoplay></lottie-player>

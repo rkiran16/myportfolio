@@ -41,7 +41,7 @@ const ProjectCard = ({ work }) => {
                         <dd className="col-sm-9 d-flex text-color7">
                           {detail?.value}
                           {detail.urlText ? <a target="_blank" className="underline" rel="noopener noreferrer" href={detail.url}>{detail.urlText}</a> : ''}
-                          {detail.stack ? detail.stack.map((s) => <div className="border d-flex justify-content-center bg-orange me-2 p-2"><FontAwesomeIcon className='text-white' icon={s} size='2x' /></div>) : ''}
+                          {detail.stack ? detail.stack.map((s) => <div className="d-flex justify-content-center bg-orange me-2 p-2"><FontAwesomeIcon className='text-white' icon={s} size='1x' /></div>) : ''}
                         </dd>
                       </>
                     )
