@@ -5,7 +5,7 @@
 $color1: #084B83;
 $color2: #42BFDD;
 $color3: #BBE6E4;
-$color4: #F55555;
+$color4: #fb5607;
 $color5: #ffffff;
 $color6: #cccccc;
 $color7: #0d503c;
@@ -17,6 +17,7 @@ body {
     margin: 0;
     padding: 0;
     color: $color6;
+    font-size: 16px;
     font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
 }
 
@@ -126,192 +127,207 @@ a {
 /* START Resume styles */
 
 .sidebar-wrapper {
-    background: #1aa179;
-    color: #fff;
+    background: $color2;
+    color: $color5;
+
+    a{
+        color: $color5;
+    }
+
+    .tagline {
+        color: $color1;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .contact-list {
+        .svg-inline--fa {
+            margin-right: 5px;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+
+        li {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .email {
+            .svg-inline--fa {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .container-block {
+        padding: 30px;
+    }
+
+    .container-block-title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .degree {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .education-container {
+        .item {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .meta {
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 500;
+            margin-bottom: 0px;
+            margin-top: 0;
+            font-size: 14px;
+        }
+
+        .time {
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 500;
+            margin-bottom: 0px;
+        }
+    }
+
+    .languages-container {
+        .lang-desc {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    .languages-list {
+        margin-bottom: 0;
+
+        li {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .interests-list {
+        margin-bottom: 0;
+
+        li {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
-.sidebar-wrapper a {
-    color: #fff;
-}
+.main-wrapper {
+    .section-title {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+        color: $color1;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 20px;
+        display: flex;
 
-.sidebar-wrapper .tagline {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 0;
-}
+        .icon-holder {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+            display: flex;
+            color: #fff;
+            border-radius: 50%;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            background: $color4;
+            text-align: center;
+            font-size: 16px;
+            position: relative;
+            top: -2px;
+            padding-top: 2px;
+            justify-content: center;
+            align-items: center;
 
+            .svg-inline--fa {
+                font-size: 14px;
+                margin-top: 6px;
+            }
+        }
+    }
 
-.sidebar-wrapper .contact-list .svg-inline--fa {
-    margin-right: 5px;
-    font-size: 18px;
-    vertical-align: middle;
-}
+    .section {
+        margin-bottom: 60px;
+    }
 
-.sidebar-wrapper .contact-list li {
-    margin-bottom: 15px;
-}
+    .experiences-section {
+        .item {
+            margin-bottom: 30px;
+        }
+    }
 
-.sidebar-wrapper .contact-list li:last-child {
-    margin-bottom: 0;
-}
+    .upper-row {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 2px;
+    }
 
-.sidebar-wrapper .contact-list .email .svg-inline--fa {
-    font-size: 14px;
-}
+    .job-title {
+        color: $color1;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
 
-.sidebar-wrapper .container-block {
-    padding: 30px;
-}
+    .time {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: $color1;
+    }
 
-.sidebar-wrapper .container-block-title {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 15px;
-}
+    .company {
+        margin-bottom: 10px;
+        color: $color1;
+    }
 
-.sidebar-wrapper .degree {
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 5px;
-}
+    .project-title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 5px;
+        color: $color1;
+        font-weight: 500;
+    }
 
-.sidebar-wrapper .education-container .item {
-    margin-bottom: 15px;
-}
+    .projects-section {
+        .intro {
+            margin-bottom: 30px;
+        }
 
-.sidebar-wrapper .education-container .item:last-child {
-    margin-bottom: 0;
-}
-
-.sidebar-wrapper .education-container .meta {
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 500;
-    margin-bottom: 0px;
-    margin-top: 0;
-    font-size: 14px;
-}
-
-.sidebar-wrapper .education-container .time {
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 500;
-    margin-bottom: 0px;
-}
-
-.sidebar-wrapper .languages-container .lang-desc {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.sidebar-wrapper .languages-list {
-    margin-bottom: 0;
-}
-
-.sidebar-wrapper .languages-list li {
-    margin-bottom: 10px;
-}
-
-.sidebar-wrapper .languages-list li:last-child {
-    margin-bottom: 0;
-}
-
-.sidebar-wrapper .interests-list {
-    margin-bottom: 0;
-}
-
-.sidebar-wrapper .interests-list li {
-    margin-bottom: 10px;
-}
-
-.sidebar-wrapper .interests-list li:last-child {
-    margin-bottom: 0;
-}
-
-.main-wrapper .section-title {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 500;
-    color: #2d7788;
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 20px;
-    display: flex
-}
-
-.main-wrapper .section-title .icon-holder {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-    display: flex;
-    color: #fff;
-    border-radius: 50%;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    background: #2d7788;
-    text-align: center;
-    font-size: 16px;
-    position: relative;
-    top: -2px;
-    padding-top: 2px;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-wrapper .section-title .icon-holder .svg-inline--fa {
-    font-size: 14px;
-    margin-top: 6px;
-}
-
-.main-wrapper .section {
-    margin-bottom: 60px;
-}
-
-.main-wrapper .experiences-section .item {
-    margin-bottom: 30px;
-}
-
-.main-wrapper .upper-row {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 2px;
-}
-
-.main-wrapper .job-title {
-    color: #3F4650;
-    font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 500;
-}
-
-.main-wrapper .time {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: #97AAC3;
-}
-
-.main-wrapper .company {
-    margin-bottom: 10px;
-    color: #97AAC3;
-}
-
-.main-wrapper .project-title {
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-.main-wrapper .projects-section .intro {
-    margin-bottom: 30px;
-}
-
-.main-wrapper .projects-section .item {
-    margin-bottom: 15px;
+        .item {
+            margin-bottom: 15px;
+        }
+    }
 }
 
 /* END Resume styles */
@@ -369,4 +385,10 @@ a {
     /* -webkit-animation: bounce 1s;
     animation: bounce 1s; */
     cursor: pointer;
+}
+
+footer {
+    small {
+        font-size: x-small;
+    }
 }

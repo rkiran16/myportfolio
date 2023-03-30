@@ -35,7 +35,7 @@ const Hero = () => {
                 <div className='d-flex flex-column-reverse align-items-center w-100 flex-md-row justify-content-between'>
                     <ProfileSection />
                     <div className='d-flex w-100 p-sm-3 justify-content-center justify-content-md-end animate__animated animate__fadeInRight'>
-                        <img src={ProfilePic} alt="Ravi Kanculakunta" className="img-fluid rounded-4 shadow" />
+                        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_m9fz64i8.json"  background="transparent"  speed="1"  loop autoplay></lottie-player>
                     </div>
                 </div>
             </div>
