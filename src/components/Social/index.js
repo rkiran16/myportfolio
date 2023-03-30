@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faBox } from '@fortawesome/free-solid-svg-icons';
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -15,6 +15,11 @@ const Social = () => {
         <li className='p-2'>
           <a href='https://www.linkedin.com/in/ravikanculakunta/' rel="noreferrer" className='text-light' target="_blank">
             <FontAwesomeIcon className='fs-3' icon={faLinkedin} />
+          </a>
+        </li>
+        <li className='p-2'>
+          <a href='https://codesandbox.io/u/rkiran16' rel="noreferrer" className='text-light' target="_blank">
+            <FontAwesomeIcon className='fs-3' icon={faBox} />
           </a>
         </li>
         <li className='p-2'>
