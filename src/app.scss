@@ -39,6 +39,17 @@ html,body {
          box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
     }
 }
+
+.neo-btn-primary {
+    background-color: #A8EB12;
+    border-color: #A8EB12;
+
+    &:hover {
+        background-color: #A8EB12;
+        border-color: #A8EB12; 
+        box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #A8EB12;
+    }
+}
 /* START Anchor Styles */
 
 a {
@@ -263,57 +274,56 @@ a {
 
 /* END Resume styles */
 
-/* Start About Me Styles */
+//Social 
 
-.about-me-img-wrapper {
-    position: relative;
-    border: 4px solid;
-    width: 300px;
-    height: 300px;
-
+.linkedin {
+    color: #0a66c2 !important;
 }
 
-.about-me-img {
-    position: absolute;
-    top: -50px;
-    left: 10%;
+.github {
+    color: #6e5494 !important;
 }
 
-.about-me-img::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.2;
-    transition: all .3s linear;
+.mail {
+    color: #c71610 !important;
 }
 
-/* End About Me Styles */
+// skills 
 
-/* Start Project Card Styles */
-
-.project-card-wrapper {
-    width: 100%;
-    height: 0;
-    padding-top: 100%;
-    position: relative;
+.react {
+    color:  #61DBFB;
 }
 
-.project-card-wrapper:hover {
-    cursor: pointer;
+.js {
+    color: #ffd43b;
 }
 
-.project-card-wrapper img {
-    scale: 1.5;
+.html5 {
+    color: #e34f26;
 }
 
-.project-card-wrapper img:hover {
-    /* -webkit-animation: bounce 1s;
-    animation: bounce 1s; */
-    cursor: pointer;
+.css3 {
+    color: #264de4;
+}
+
+.sass {
+    color: #c69;
+}
+
+.node-js {
+    color: #3c873a;
+}
+
+.python {
+    color: #4584b6;
+}
+
+.vue {
+    color: #42b883;
+}
+
+.git {
+    color: #F1502F;
 }
 
 footer {

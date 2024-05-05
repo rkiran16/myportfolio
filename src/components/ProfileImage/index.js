@@ -3,7 +3,7 @@ const ProfileImage = () => {
   return (
     <img
       src={ProfilePic}
-      className="img-fluid"
+      className="img-fluid rounded-4"
       alt="Ravi Kanculakunta"
     />
   );

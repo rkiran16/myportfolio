@@ -90,12 +90,12 @@ const ProjectCard = ({ work }) => {
                           <dt className="col-sm-3 text-color7">
                             {detail?.name}
                           </dt>
-                          <dd className="col-sm-9 d-flex text-color7">
+                          <dd className="col-sm-9 d-flex">
                             {detail?.value}
                             {detail.urlText ? (
                               <a
                                 target="_blank"
-                                className="underline"
+                                className="underline fs-5"
                                 rel="noopener noreferrer"
                                 href={detail.url}
                               >
@@ -106,9 +106,9 @@ const ProjectCard = ({ work }) => {
                             )}
                             {detail.stack
                               ? detail.stack.map((s) => (
-                                  <div className="d-flex justify-content-center bg-orange me-2 p-2">
+                                  <div className="d-flex justify-content-center bg-primary me-2 p-2">
                                     <FontAwesomeIcon
-                                      className="text-white"
+                                      className="fs-4"
                                       icon={s}
                                       size="1x"
                                     />

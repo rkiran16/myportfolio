@@ -20,7 +20,7 @@ const Work = () => {
                 <div className="card h-100 neo-btn position-relative rounded-4">
                   <div className="p-4 d-flex justify-content-between">
                     <p className="h4">{title}</p>
-                    <button className="btn neo-btn">
+                    <button className="btn neo-btn neo-btn-primary">
                       <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </button>
                   </div>

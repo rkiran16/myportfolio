@@ -1,17 +1,6 @@
 import React from 'react';
 import ProfileImage from '../components/ProfileImage';
-
-const SkillSet = [
-  'react',
-  'vuejs',
-  'js',
-  'node-js',
-  'python',
-  'css3',
-  'sass',
-  'html5',
-  'yarn',
-];
+import Skills from '../components/Skills';
 
 const Resume = () => {
   return (
@@ -221,17 +210,7 @@ const Resume = () => {
                 </span>
                 Skills &amp; Proficiency
               </h2>
-              <ul className="list-inline">
-                {SkillSet.map((skill) => {
-                  return (
-                    <li className="list-inline-item me-3 mb-2 bg-orange p-2">
-                      <i
-                        className={`display-4 fa-brands text-white fa-${skill}`}
-                      ></i>
-                    </li>
-                  );
-                })}
-              </ul>
+              <Skills />
             </section>
 
             <section className="section projects-section">

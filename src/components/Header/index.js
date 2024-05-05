@@ -1,16 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Header = () => {
-  const [theme, setTheme] = useState('dark');
-  const themeToggle = (e) => {
-    if (e.target.checked) {
-      document.documentElement.setAttribute('data-bs-theme', 'light');
-      setTheme('dark');
-    } else {
-      document.documentElement.setAttribute('data-bs-theme', 'dark');
-      setTheme('light');
-    }
-  };
   return (
     <header className="animate__animated animate__fadeInDown">
       <nav className="navbar navbar-expand-lg px-3">
@@ -48,28 +38,14 @@ const Header = () => {
               <li className="nav-item">
                 <a
                   className="nav-link underline fw-bold animate__animated animate__zoomIn animate__delay-1s"
+                  rel="noreferrer"
+                  target="_blank"
                   href="mailto: ravikancula@gmail.com"
                 >
                   Fire Me An Email
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="border-secondary fw-bold animate__animated animate__zoomIn animate__delay-1s">
-            <input
-              type="checkbox"
-              className="btn-check"
-              id="btn-check"
-              autocomplete="off"
-              onClick={themeToggle}
-            ></input>
-            <label for="btn-check">
-              {theme === 'dark' ? (
-                <i className="fs-3 fa-sharp fa-solid fa-moon"></i>
-              ) : (
-                <i className="fs-3 fa-sharp fa-solid fa-sun"></i>
-              )}
-            </label>
           </div>
         </div>
       </nav>

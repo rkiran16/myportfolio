@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faBox } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {
   faSquareGithub,
   faLinkedin,
@@ -9,18 +9,21 @@ const data = [
   {
     icon: faSquareGithub,
     link: 'https://github.com/rkiran16',
+    className: 'github',
   },
   {
     icon: faLinkedin,
     link: 'https://www.linkedin.com/in/ravikanculakunta/',
+    className: 'linkedin',
   },
-  {
-    icon: faBox,
-    link: 'https://codesandbox.io/u/rkiran16',
-  },
+  // {
+  //   icon: faBox,
+  //   link: 'https://codesandbox.io/u/rkiran16',
+  // },
   {
     icon: faEnvelope,
     link: 'mailto: ravikancula@gmail.com',
+    className: 'mail',
   },
 ];
 
@@ -33,9 +36,9 @@ const Social = () => {
             href="mailto: ravikancula@gmail.com"
             rel="noreferrer"
             target="_blank"
-            className="btn btn-lg rounded-pill neo-btn"
+            className="btn btn-lg rounded-pill neo-btn neo-btn-primary"
           >
-            Download Resume
+            View My Resume
           </a>
         </li>
         {data.map((social) => {
@@ -46,7 +49,7 @@ const Social = () => {
             >
               <a
                 href={social.link}
-                className="link-secondary link-body-emphasis"
+                className={`link-secondary ${social.className}`}
                 rel="noreferrer"
                 target="_blank"
               >
