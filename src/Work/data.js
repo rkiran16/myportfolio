@@ -2,6 +2,7 @@ import DesignSystem from './images/designsystem.png';
 import CurryBowl from './images/currybowl.png';
 import Brittanica from './images/britannica.jpg';
 import Exposure from './images/exposure.png';
+import Planets from './images/3d-planets.png';
 import {
   faCss3,
   faHtml5,
@@ -39,10 +40,30 @@ import b4 from './images/ProjectBritannica/img4.jpeg';
 
 const workData = [
   {
+    id: 'planets',
+    image: Planets,
+    title: '3D Planets with Three.js',
+    projectDescription: '',
+    projectDetails: [
+      {
+        name: 'Category',
+        value: 'Web Developemnt',
+      },
+      {
+        name: 'URL',
+        url: 'https://3d-two-ruddy.vercel.app/',
+        urlText: '3D Planets',
+      },
+      {
+        name: 'Tech Stack',
+        stack: [faReact, faHtml5, faCss3, faJs],
+      },
+    ],
+  },
+  {
     id: 'curryBowl',
     image: CurryBowl,
     title: 'Curry Bowl',
-    date: 'September 22, 2017',
     images: [cb1, cb2, cb3, cb4],
     projectDescription: 'A responsive web application for Restaurant',
     projectDetails: [
@@ -56,10 +77,6 @@ const workData = [
         urlText: 'Curry Bowl',
       },
       {
-        name: 'Date',
-        value: 'September 22, 2017',
-      },
-      {
         name: 'Tech Stack',
         stack: [faReact, faHtml5, faCss3, faJs],
       },
@@ -69,7 +86,6 @@ const workData = [
     id: 'exposure',
     image: Exposure,
     title: 'Exposure',
-    date: 'Feb 6th, 2023',
     images: [exp1, exp2, exp3, exp4],
     projectDescription:
       'A responsive E-commerce application that let users buy photos online. This is a Serverless application built using AWS Lambda and Mock Stripe payment service.',
@@ -93,7 +109,6 @@ const workData = [
     id: 'designSystem',
     image: DesignSystem,
     title: 'Design System with Storybook',
-    date: 'August 18, 2022',
     images: [sb1, sb2, sb3, sb4],
     projectDescription:
       'Design System is a reusable component library that helps design system contributors build UIs faster.Design system is built with Atomic Design Methodology by leverging bootstrap styles.',
@@ -108,10 +123,6 @@ const workData = [
         urlText: 'Design System',
       },
       {
-        name: 'Date',
-        value: 'August 18, 2022',
-      },
-      {
         name: 'Tech Stack',
         stack: [faHtml5, faCss3, faJs],
       },
@@ -121,7 +132,6 @@ const workData = [
     id: 'brittanica',
     image: Brittanica,
     title: 'Brittanica',
-    date: 'June 10, 2020',
     images: [b1, b2, b4],
     projectDescription:
       'A responsive web application display countries information.',
@@ -134,10 +144,6 @@ const workData = [
         name: 'URL',
         url: 'https://rkiran16.github.io/britannica-countries/',
         urlText: 'Britannica Countries',
-      },
-      {
-        name: 'Date',
-        value: 'June 10, 2020',
       },
       {
         name: 'Tech Stack',
