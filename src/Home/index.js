@@ -3,6 +3,20 @@ import Skills from '../components/Skills';
 import Social from '../components/Social';
 import Work from '../Work';
 
+const SkillSet = [
+  'react',
+  'js',
+  'html5',
+  'css3',
+  'sass',
+  'node-js',
+  'python',
+  'vuejs',
+  'git',
+  'figma',
+  'aws',
+];
+
 const Home = () => {
   return (
     <div className="container py-5">
@@ -39,7 +53,7 @@ const Home = () => {
                   </p>
                 </div>
                 <h4>My Current SkillSet</h4>
-                <Skills />
+                <Skills skills={SkillSet} />
                 <Social />
               </div>
             </div>

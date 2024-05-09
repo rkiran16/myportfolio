@@ -1,22 +1,9 @@
-const SkillSet = [
-    'react',
-    'js',
-    'html5',
-    'css3',
-    'sass',
-    'node-js',
-    'python',
-    'vuejs',
-    'git',
-    'figma',
-    'aws',
-  ];
   
-const Skills = () => {
+const Skills = ({skills}) => {
     return (
       <div className="mt-4">
         <ul className="list-inline d-flex flex-wrap">
-          {SkillSet.map((skill) => {
+          {skills.map((skill) => {
             return (
               <li
                 key={skill}
