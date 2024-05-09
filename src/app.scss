@@ -1,65 +1,58 @@
-* {
-    box-sizing: border-box;
+
+
+// Override default variables before the import
+// you can open the bootstrap.scss module and check any available variables.
+$primary: #619E00;
+
+$body-bg:  #e6e7ee;
+
+$font-family-sans-serif: "Work Sans", sans-serif;
+
+html,body {
+    height: 100%;
+    width: 100%;
 }
 
-$color1: #084B83;
-$color2: #42BFDD;
-$color3: #BBE6E4;
-$color4: #fb5607;
-$color5: #ffffff;
-$color6: #cccccc;
-$color7: #0d503c;
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-html,
-body {
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    color: $color6;
-    font-size: 16px;
-    font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+.neo {
+    box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff !important;
 }
 
-
-// background 
-
-.bg-color1 {
-    background-color: $color1;
+.shadow-inset {
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff !important;
 }
 
-.bg-color2 {
-    background-color: $color2;
+.neo-btn {
+    position: relative;
+    transition: all .2s ease;
+    letter-spacing: .025em;
+    font-size: 1rem;
+    background-color: #e6e7ee;
+    border-color: #d1d9e6;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+
+    &:hover {
+        color: #31344b;
+         background-color: #e6e7ee;
+        border-color: #e6e7ee;
+         box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+    }
 }
 
-.bg-color3 {
-    background-color: $color3;
-}
+.neo-btn-primary {
+    background-color: #A8EB12;
+    border-color: #A8EB12;
 
-.bg-orange {
-    background-color: $color4;
+    &:hover {
+        background-color: #A8EB12;
+        border-color: #A8EB12; 
+        box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #A8EB12;
+    }
 }
-
-.logo {
-    font-family: 'Monoton', cursive;
-}
-
-.text-orange {
-    color: $color4;
-}
-
-.text-color7 {
-    color: $color7;
-}
-
-.social {
-    z-index: 999;
-}
-
 /* START Anchor Styles */
 
 a {
-    color: $color7;
     text-decoration: none;
 
     &.underline {
@@ -67,8 +60,6 @@ a {
         position: relative;
 
         &:hover {
-            color: $color7 !important;
-
             &::after {
                 transform: scaleX(1);
                 transform-origin: bottom left;
@@ -89,53 +80,10 @@ a {
         }
     }
 }
-
-/* End anchor Styles */
-
-/* START Button Styles */
-
-.button {
-    color: $color3;
-    border: 3px solid $color3;
-    border-radius: 0px;
-    padding: 16px 40px;
-    display: inline-flex;
-    justify-content: center;
-    font-size: 18px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    box-shadow: inset 0 0 0 0 $color2;
-    -webkit-transition: ease-in-out 0.3s;
-    -moz-transition: ease-in-out 0.3s;
-    transition: ease-in-out 0.3s;
-}
-
-@media screen and (max-width: 992px) {
-    .button {
-        width: 100%;
-    }
-}
-
-.slide_right:hover {
-    box-shadow: inset 400px 0 0 0 $color2;
-    color: $color5;
-    border-color: $color2;
-}
-
-/* End Button Styles */
-
 /* START Resume styles */
 
 .sidebar-wrapper {
-    background: $color2;
-    color: $color5;
-
-    a{
-        color: $color5;
-    }
-
     .tagline {
-        color: $color1;
         font-size: 16px;
         font-weight: 400;
         margin-top: 0;
@@ -192,7 +140,6 @@ a {
         }
 
         .meta {
-            color: rgba(255, 255, 255, 0.6);
             font-weight: 500;
             margin-bottom: 0px;
             margin-top: 0;
@@ -200,7 +147,6 @@ a {
         }
 
         .time {
-            color: rgba(255, 255, 255, 0.6);
             font-weight: 500;
             margin-bottom: 0px;
         }
@@ -242,7 +188,6 @@ a {
         text-transform: uppercase;
         font-size: 20px;
         font-weight: 500;
-        color: $color1;
         position: relative;
         margin-top: 0;
         margin-bottom: 20px;
@@ -258,7 +203,6 @@ a {
             -moz-background-clip: padding;
             -webkit-background-clip: padding-box;
             background-clip: padding-box;
-            background: $color4;
             text-align: center;
             font-size: 16px;
             position: relative;
@@ -291,7 +235,6 @@ a {
     }
 
     .job-title {
-        color: $color1;
         font-size: 16px;
         margin-top: 0;
         margin-bottom: 0;
@@ -302,12 +245,10 @@ a {
         position: absolute;
         right: 0;
         top: 0;
-        color: $color1;
     }
 
     .company {
         margin-bottom: 10px;
-        color: $color1;
     }
 
     .project-title {
@@ -315,7 +256,6 @@ a {
         font-weight: 400;
         margin-top: 0;
         margin-bottom: 5px;
-        color: $color1;
         font-weight: 500;
     }
 
@@ -332,59 +272,56 @@ a {
 
 /* END Resume styles */
 
-/* Start About Me Styles */
+//Social 
 
-.about-me-img-wrapper {
-    position: relative;
-    border: 4px solid $color4;
-    width: 300px;
-    height: 300px;
-
+.linkedin {
+    color: #0a66c2 !important;
 }
 
-.about-me-img {
-    position: absolute;
-    top: -50px;
-    left: 10%;
+.github {
+    color: #6e5494 !important;
 }
 
-.about-me-img::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: $color4;
-    opacity: 0.2;
-    transition: all .3s linear;
+.mail {
+    color: #c71610 !important;
 }
 
-/* End About Me Styles */
+// skills 
 
-/* Start Project Card Styles */
-
-.project-card-wrapper {
-    width: 100%;
-    height: 0;
-    padding-top: 100%;
-    background-color: $color3;
-    position: relative;
+.react, .react-native {
+    color:  #61DBFB;
 }
 
-.project-card-wrapper:hover {
-    cursor: pointer;
+.js {
+    color: #ffd43b;
 }
 
-.project-card-wrapper img {
-    scale: 1.5;
+.html5 {
+    color: #e34f26;
 }
 
-.project-card-wrapper img:hover {
-    /* -webkit-animation: bounce 1s;
-    animation: bounce 1s; */
-    cursor: pointer;
+.css3 {
+    color: #264de4;
+}
+
+.sass {
+    color: #c69;
+}
+
+.node-js {
+    color: #3c873a;
+}
+
+.python {
+    color: #4584b6;
+}
+
+.vue {
+    color: #42b883;
+}
+
+.git {
+    color: #F1502F;
 }
 
 footer {
@@ -392,3 +329,9 @@ footer {
         font-size: x-small;
     }
 }
+
+
+.page {
+    flex-direction: 'row';
+    background-color: '#E4E4E4',
+  }
