@@ -33,12 +33,10 @@ const Social = () => {
       <ul className="mt-4 list-inline d-flex align-items-center">
         <li className="animate__animated animate__zoomIn animate__delay-1s pe-2 list-inline-item">
           <a
-            href="mailto: ravikancula@gmail.com"
-            rel="noreferrer"
-            target="_blank"
+            href="/resume"
             className="btn btn-lg rounded-pill neo-btn neo-btn-primary"
           >
-            View My Resume
+            <strong>View My Resume</strong>
           </a>
         </li>
         {data.map((social) => {

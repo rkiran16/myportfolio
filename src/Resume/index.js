@@ -1,6 +1,7 @@
 import React from 'react';
 import ProfileImage from '../components/ProfileImage';
 import Skills from '../components/Skills';
+import { SkillSet } from '../Home';
 
 const Resume = () => {
   return (
@@ -9,11 +10,15 @@ const Resume = () => {
         <div className="row">
           <div className="sidebar-wrapper col-12 col-sm-4">
             <div className="p-4 text-center">
-              <ProfileImage />
-              <h3>Ravi Kanculakunta</h3>
-              <h3 className="tagline">
-                Sr.Front End Developer, IBM IX
-              </h3>
+              <div className="shadow-inset p-3">
+                <ProfileImage />
+              </div>
+              <div className="my-2">
+                <h3>Ravi Kanculakunta</h3>
+                <h3 className="tagline">
+                  Sr.Front End Developer, IBM IX
+                </h3>
+              </div>
             </div>
 
             <div className="container-block">
@@ -69,12 +74,7 @@ const Resume = () => {
 
           <div className="main-wrapper p-4 p-sm-5 bg-white col-12 col-sm-8">
             <section className="section">
-              <h2 className="section-title">
-                <span className="icon-holder">
-                  <i className="fa-solid fa-user"></i>
-                </span>
-                Career Profile
-              </h2>
+              <h2 className="section-title">Career Profile</h2>
               <p className="text-black">
                 I am a Sr Front End Developer with 8 years experience,
                 meaningful contributions to teams of varying size and
@@ -93,12 +93,7 @@ const Resume = () => {
             </section>
 
             <section className="section experiences-section">
-              <h2 className="section-title">
-                <span className="icon-holder">
-                  <i className="fa-solid fa-briefcase"></i>
-                </span>
-                Experiences
-              </h2>
+              <h2 className="section-title">Experiences</h2>
               <div className="item">
                 <div className="meta">
                   <div className="upper-row">
@@ -205,21 +200,13 @@ const Resume = () => {
 
             <section className="skills-section section">
               <h2 className="section-title">
-                <span className="icon-holder">
-                  <i className="fa-solid fa-rocket"></i>
-                </span>
                 Skills &amp; Proficiency
               </h2>
-              <Skills />
+              <Skills skills={SkillSet} />
             </section>
 
             <section className="section projects-section">
-              <h2 className="section-title">
-                <span className="icon-holder">
-                  <i className="fa-solid fa-archive"></i>
-                </span>
-                Projects
-              </h2>
+              <h2 className="section-title">Projects</h2>
               <div className="intro">
                 <p className="text-black">
                   You can list your side projects or open source

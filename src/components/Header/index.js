@@ -6,7 +6,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg px-3">
         <div className="container">
           <a
-            className="display-4 logo underline animate__animated animate__zoomIn animate__slow animate__delay-1s"
+            className="display-5 logo shadow-inset p-2 underline animate__animated animate__zoomIn animate__slow animate__delay-1s"
             href="/"
           >
             RK

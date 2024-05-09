@@ -3,8 +3,9 @@ import Skills from '../components/Skills';
 import Social from '../components/Social';
 import Work from '../Work';
 
-const SkillSet = [
+export const SkillSet = [
   'react',
+  'react-native',
   'js',
   'html5',
   'css3',

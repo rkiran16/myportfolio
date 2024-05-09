@@ -30,7 +30,7 @@ const workData = [
     url: 'https://exposure-eta.vercel.app',
     projectDescription:
       'A responsive E-commerce application that let users buy photos online. This is a Serverless application built using AWS Lambda and Mock Stripe payment service.',
-    stack: ['react', 'stripe', 'js', 'html5', 'css3', 'sass'],
+    stack: ['react', 'stripe', 'js', 'html5', 'css3', 'sass', 'aws'],
   },
   {
     id: 'designSystem',
