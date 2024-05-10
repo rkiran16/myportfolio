@@ -11,7 +11,7 @@ const workData = [
     title: '3D Planets with React Three Fiber',
     url: 'https://3d-two-ruddy.vercel.app/',
     projectDescription:
-      'Application which display 3D models of planets and information bult using React Three Fiber',
+      'Application which display 3D models of planets built using React Three Fiber',
     stack: ['react'],
   },
   {
@@ -20,7 +20,7 @@ const workData = [
     title: 'Curry Bowl',
     url: 'https://rkiran16.github.io/restaurant/',
     projectDescription:
-      'Online food ordering systems use digital menus that allow customers to place and pay for orders in restaurants.',
+      'Online food ordering system that uses digital menus that allow customers to place and pay for orders in restaurants.',
     stack: ['react'],
   },
   {

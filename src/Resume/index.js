@@ -115,6 +115,15 @@ const Resume = () => {
                     various platforms.
                   </p>
                   <p className="text-black">
+                    Currently working on building React Native App for
+                    General Motors. The App allow users to stay
+                    connected and informed about vehicle. From remote
+                    control to schedule service and beyond. I am one
+                    of the Sr React Developers working on building UI
+                    features , optimize the code to adhere with Clean
+                    architecture.
+                  </p>
+                  <p className="text-black">
                     For Sally Beauty, I was involved to create native
                     app using React Native. I am responsible for
                     building functional UI components. With power of
