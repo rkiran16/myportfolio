@@ -12,8 +12,6 @@ export const SkillSet = [
   'sass',
   'node-js',
   'python',
-  'git',
-  'figma',
   'aws',
   'bootstrap',
 ];
