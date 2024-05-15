@@ -2,7 +2,6 @@ import React from 'react';
 import ProfileImage from '../components/ProfileImage';
 import Skills from '../components/Skills';
 import { SkillSet } from '../Home';
-import ResumePDF from '../Resume/Resume.pdf';
 
 const Resume = () => {
   return (
@@ -24,7 +23,8 @@ const Resume = () => {
             <div className="container- d-grid px-2">
               <a
                 rel="noreferrer"
-                href={ResumePDF}
+                href="%PUBLIC_URL%/Resume.pdf"
+                download
                 className="btn btn-lg neo-btn neo-btn-primary"
                 target="_blank"
               >
