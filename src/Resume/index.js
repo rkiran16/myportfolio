@@ -2,6 +2,7 @@ import React from 'react';
 import ProfileImage from '../components/ProfileImage';
 import Skills from '../components/Skills';
 import { SkillSet } from '../Home';
+import ResumePDF from '../Resume/Resume.pdf';
 
 const Resume = () => {
   return (
@@ -20,7 +21,16 @@ const Resume = () => {
                 </h3>
               </div>
             </div>
-
+            <div className="container- d-grid px-2">
+              <a
+                rel="noreferrer"
+                href={ResumePDF}
+                className="btn btn-lg neo-btn neo-btn-primary"
+                target="_blank"
+              >
+                Download Resume
+              </a>
+            </div>
             <div className="container-block">
               <ul className="list-unstyled contact-list">
                 <li className="d-flex align-items-center">

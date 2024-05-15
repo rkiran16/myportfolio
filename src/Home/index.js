@@ -16,6 +16,7 @@ export const SkillSet = [
   'git',
   'figma',
   'aws',
+  'bootstrap',
 ];
 
 const Home = () => {
@@ -53,7 +54,7 @@ const Home = () => {
                     maximize user efficiency.
                   </p>
                 </div>
-                <h4>My Current SkillSet</h4>
+                <h4 className="mt-4">Tech Stack</h4>
                 <Skills skills={SkillSet} />
                 <Social />
               </div>
