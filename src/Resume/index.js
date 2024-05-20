@@ -23,7 +23,7 @@ const Resume = () => {
             <div className="container- d-grid px-2">
               <a
                 rel="noreferrer"
-                href="%PUBLIC_URL%/Resume.pdf"
+                href={`${process.env.PUBLIC_URL}/Resume.pdf`}
                 download
                 className="btn btn-lg neo-btn neo-btn-primary"
                 target="_blank"
