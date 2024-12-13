@@ -1,5 +1,8 @@
 import React from 'react';
 import ProfileImage from '../components/ProfileImage';
+import AWSCloudCertificate from "./aws-cloud-certificate.png";
+import AWSDeveloperAssocaite from "./aws-developer-associate.png";
+import ShopifyCertificate from "./headless-at-shopify-for-developers-verified-skill-b.png";
 import Skills from '../components/Skills';
 import { SkillSet } from '../Home';
 
@@ -46,7 +49,7 @@ const Resume = () => {
                 <li className="d-flex align-items-center">
                   <i className="fa-brands fa-linkedin-in me-2"></i>
                   <a
-                    href="linkedin.com/in/ravikanculakunta"
+                    href="https://www.linkedin.com/in/ravikanculakunta/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -56,7 +59,7 @@ const Resume = () => {
                 <li className="d-flex align-items-center">
                   <i className="fa-brands fa-github me-2"></i>
                   <a
-                    href="github.com/rkiran16"
+                    href="https://github.com/rkiran16"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -65,6 +68,43 @@ const Resume = () => {
                 </li>
               </ul>
             </div>
+
+            <div className="container-block">
+            <h2 className="container-block-title">CERTIFICATION</h2>
+              <ul className="list-unstyled contact-list">
+                <li className="d-flex align-items-center">
+                  <img src={AWSCloudCertificate} alt="AWS Cloud Practitioner" width="50" className='img-fluid me-2'></img>
+                  <a
+                    href="https://www.credly.com/badges/d50bf339-f6b1-412d-9390-a1cb2aa5dba2"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    AWS Cloud Practitioner
+                  </a>
+                </li>
+                <li className="d-flex align-items-center">
+                <img src={AWSDeveloperAssocaite} alt=" AWS Certified Developer - Associate" width="50" className='img-fluid me-2'></img>
+                  <a
+                    href="https://www.credly.com/badges/939b7106-5cf8-46db-9c57-d968489c2aa8"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    AWS Certified Developer - Associate
+                  </a>
+                </li>
+                <li className="d-flex align-items-center">
+                <img src={ShopifyCertificate} alt="Headless at Shopify for Developers" width="50" className='img-fluid me-2'></img>
+                  <a
+                    href="https://www.credly.com/badges/1b3cfd54-e0ce-4636-85d3-4fc5a35023b6"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Headless at Shopify for Developers
+                  </a>
+                </li>
+              </ul>
+            </div>
+
             <div className="education-container container-block">
               <h2 className="container-block-title">Education</h2>
               <div className="item">
