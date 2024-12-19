@@ -26,8 +26,7 @@ const Resume = () => {
             <div className="container- d-grid px-2">
               <a
                 rel="noreferrer"
-                href={`${process.env.PUBLIC_URL}/Resume.pdf`}
-                download
+                href="https://raviresumebucket.s3.us-east-1.amazonaws.com/Ravi_kanculakunta_-Sr_Front_End_Developer.pdf"
                 className="btn btn-lg neo-btn neo-btn-primary"
                 target="_blank"
               >
