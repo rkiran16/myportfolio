@@ -3,8 +3,18 @@ import CurryBowl from './images/currybowl.png';
 import Brittanica from './images/britannica.jpg';
 import Exposure from './images/exposure.png';
 import Planets from './images/planets.jpg';
+import Shopify from './images/shopify-hydrogen.png';
 
 const workData = [
+  {
+    id: 'curryBowl',
+    image: Shopify,
+    title: 'Hydrogen e-Commerce',
+    url: 'https://hydrogen-zeta-one.vercel.app/',
+    projectDescription:
+      'E-Commerce Platform build using Shopify and Hydrogen',
+    stack: ['react', 'shopify', 'remix'],
+  },
   {
     id: 'curryBowl',
     image: CurryBowl,
