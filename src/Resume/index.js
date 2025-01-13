@@ -3,6 +3,7 @@ import ProfileImage from '../components/ProfileImage';
 import AWSCloudCertificate from "./aws-cloud-certificate.png";
 import AWSDeveloperAssocaite from "./aws-developer-associate.png";
 import ShopifyCertificate from "./headless-at-shopify-for-developers-verified-skill-b.png";
+import AWSAICertificate from "./aws-certified-ai-practitioner-early-adopter.png";
 import Skills from '../components/Skills';
 import { SkillSet } from '../Home';
 
@@ -89,6 +90,16 @@ const Resume = () => {
                     rel="noreferrer"
                   >
                     AWS Certified Developer - Associate
+                  </a>
+                </li>
+                <li className="d-flex align-items-center">
+                <img src={AWSAICertificate} alt=" AWS Certified AI Practitioner" width="50" className='img-fluid me-2'></img>
+                  <a
+                    href="https://www.credly.com/badges/9ff09a36-d459-4d4a-a64a-cf0fe0e8fd9b/public_url"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    AWS Certified AI Practitioner Early Adopter
                   </a>
                 </li>
                 <li className="d-flex align-items-center">
